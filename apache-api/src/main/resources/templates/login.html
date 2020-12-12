@@ -1,0 +1,48 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VIETIN - Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link th:href="@{css/bootstrap_root.min.css}" rel="stylesheet" />
+    <link th:href="@{css/font-awesome.min.css}" rel="stylesheet" />
+    <link th:href="@{css/icon-font.min.css}" rel="stylesheet" />
+    <link th:href="@{css/animate.min.css}" rel="stylesheet" />
+    <link th:href="@{css/light-bootstrap-dashboard.css}" rel="stylesheet" />
+    <link th:href="@{css/vietin/login.css}" rel="stylesheet" />
+</head>
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <div class="login100-form validate-form flex-sb flex-w">
+                    <span class="login100-form-title text-center">VIETIN Login</span>
+                    <span class="txt1">username</span>
+                    <div class="wrap-input100 validate-input username" data-validate="Username is required">
+                        <input class="input100" type="text" id="username" name="username" />
+                        <span class="focus-input100"></span>
+                    </div>
+                    <span class="txt1">Password</span>
+                    <div class="wrap-input100 validate-input password" data-validate="Password is required">
+                        <span class="btn-show-pass"><i class="fa fa-eye"></i></span>
+                        <input class="input100" type="password" id="password" name="pass" />
+                        <span class="focus-input100"></span>
+                    </div>
+                    <div class="container-login100-form-btn d-flex justify-content-center">
+                        <button class="login100-form-btn" id="btnLogin">Login</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/javascript" th:src="@{js/jquery.3.2.1.min.js}"></script>
+    <script type="application/javascript" th:src="@{js/bootstrap.min.js}"></script>
+    <script type="application/javascript" th:src="@{js/bootstrap-notify.js}"></script>
+    <script type="application/javascript" th:src="@{js/light-bootstrap-dashboard.js}"></script>
+    <script type="application/javascript" th:src="@{js/vietin/rest.js}"></script>
+    <script type="application/javascript" th:src="@{js/vietin/common.js}"></script>
+    <script type="application/javascript" th:src="@{js/vietin/constant.js}"></script>
+    <script type="application/javascript" th:src="@{js/vietin/login.js}"></script>
+</body>
+</html>

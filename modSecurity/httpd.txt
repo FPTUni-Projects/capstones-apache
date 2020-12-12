@@ -1,0 +1,6 @@
+LoadModule security2_module modules/mod_security2.so
+<IfModule security2_module>
+	Include conf/modsecurity.conf
+	Include conf/crs-setup.conf
+	Include conf/rules/*.conf
+</IfModule>

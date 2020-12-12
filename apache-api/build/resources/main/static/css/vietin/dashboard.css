@@ -1,0 +1,90 @@
+/* Dashboard */
+#orderInfoModal .modal-title {
+    width: 80%;
+    float: left;
+}
+#orderInfoModal .modal-title-close {
+    width: 20%;
+    float: right;
+}
+#orderInfoModal .modal-body {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#orderInfoModal .modal-body label {
+    font-size: 1.2rem;
+}
+#orderInfoModal .modal-footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#orderInfoModal .modal-footer button {
+    font-weight: 600 !important;
+    font-size: 1.5rem;
+}
+
+#orderInfoModal .modal-body-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+#orderInfoModal .modal-body-header .btn-order-info-tab:first-child {
+    border-top-left-radius: 6px;
+}
+#orderInfoModal .modal-body-header .btn-order-info-tab {
+    background-color: #fff;
+    padding: 1.5rem 3rem;
+    border: none;
+    font-size: 1.6rem;
+    color: #000;
+    font-weight: 600;
+}
+#orderInfoModal .modal-body-header .btn-order-info-tab:focus,
+#orderInfoModal .modal-body-header .btn-order-info-tab:active {
+    border: none;
+    border-radius: 0;
+    outline: none;
+}
+#orderInfoModal .modal-body-header .btn-order-info-tab.active {
+    background-color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+
+#orderInfoModal .modal-body-body {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 1.5rem;
+}
+#orderInfoModal .modal-body-body .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+#orderInfoModal .modal-body-body .row.section-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+    margin: 1.25rem 0 0.5rem 0;
+}
+#orderInfoModal .modal-body-body .row.section-content > div {
+    display: flex;
+    justify-content: space-between;
+}
+#orderInfoModal .modal-body-body .row.section-content span {
+    display: inline-flex;
+}
+#orderInfoModal .modal-body-body .row.section-content .title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+}
+#orderInfoModal .modal-body-body .row.section-content .label {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #666;
+}

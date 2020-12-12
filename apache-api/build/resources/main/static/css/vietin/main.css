@@ -1,0 +1,129 @@
+:root {
+    --main-color: #f57c00;
+}
+
+*, html, body {
+    font-size: 10px;
+}
+
+/* Custom sidebar */
+.sidebar,
+.sidebar-wrapper {
+    opacity: 1 !important;
+    background: #333 !important;
+}
+.sidebar::before,
+.sidebar::after {
+    background-color: #333 !important;
+}
+.sidebar .sidebar-wrapper .logo-title {
+    display: flex;
+    justify-content: center;
+}
+.sidebar .sidebar-wrapper .logo-title a {
+    font-weight: bold;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--main-color);
+}
+
+
+/* Custom button */
+.btn-main {
+    color: #fff;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+.btn-link {
+    border: none;
+}
+.btn-link-main {
+    color: var(--main-color);
+}
+.btn-main-cancel {
+    background-color: #666;
+    color: #fff;
+    border: 2px solid #666;
+}
+
+/* Custom alert notification */
+.main-alert span[data-notify="message"] {
+    font-size: 1.5rem;
+}
+
+/* Custom table */
+.content {
+  margin-top: 1rem;
+}
+.content .header .title {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.content table th {
+    color: #000 !important;
+    font-weight: 700 !important;
+}
+.content table tr td {
+    font-size: 1.2rem;
+}
+.content table tr td i {
+    font-size: 2rem;
+}
+.content .btn-table-inline,
+.content .btn-table-inline:focus {
+    border: none !important;
+    background: none !important;
+    outline: none !important;
+}
+.content .btn-table-inline i {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+/* Custom badge */
+.main-badge {
+    position: relative;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #666;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+.main-badge.main-badge-info {
+    color: #fff;
+    border: 1px solid #15A2B8;
+}
+.main-badge.main-badge-info[class*="main-badge-fill"] { background-color: #15A2B8; }
+.main-badge.main-badge-success {
+    color: #fff;
+    border: 1px solid #28A745;
+}
+.main-badge.main-badge-success[class*="main-badge-fill"]{ background-color: #28A745; }
+.main-badge.main-badge-warning {
+    color: #000;
+    border: 1px solid #FFC007;
+}
+.main-badge.main-badge-warning[class*="main-badge-fill"]{ background-color: #FFC007; }
+.main-badge.main-badge-primary {
+    color: #fff;
+    border: 1px solid #057BFE;
+}
+.main-badge.main-badge-primary[class*="main-badge-fill"]{ background-color: #057BFE; }
+.main-badge.main-badge-danger {
+    color: #fff;
+    border: 1px solid #DD3444;
+}
+.main-badge.main-badge-danger[class*="main-badge-fill"]{ background-color: #DD3444; }
+.main-badge.main-badge-light {
+    color: #fff;
+    border: 1px solid #F8F9FA;
+}
+.main-badge.main-badge-light[class*="main-badge-fill"]{ background-color: #F8F9FA; }
+
+
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+
+<!--<div class="sidebar" data-color="" data-image="img/sidebar-5.jpg" th:fragment="sidebar">-->
+<div class="sidebar" th:fragment="sidebar">
+    <!--
+        Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
+        Tip 2: you can also add an image using data-image tag
+    -->
+    <div class="sidebar-wrapper">
+        <div class="logo-title">
+            <a href="/" >Vietin</a>
+        </div>
+        <hr class="w-100" style="margin: 0" />
+        <ul class="nav">
+            <li class="menu-nav-item active">
+                <a href="/dashboard" class="menu-nav-link"
+                   data-name="Trang Chủ"
+                   data-uri="/dashboard">
+                    <i class="pe-7s-home"></i>
+                    <p class="sidebar-name">Trang Chủ</p>
+                </a>
+            </li>
+            <li class="menu-nav-item">
+                <a href="/create-order" class="menu-nav-link"
+                   data-name="Tạo Đơn Hàng,Tạo Phiếu Sản Xuất"
+                   data-uri="/create-order,/create-product-slip">
+                    <i class="pe-7s-note2"></i>
+                    <p class="sidebar-name">Tạo Đơn Hàng</p>
+                </a>
+            </li>
+            <li class="menu-nav-item" id="createUserMenu">
+                <a href="/create-user" class="menu-nav-link"
+                   data-name="Tạo Tài Khoản Nhân Viên"
+                   data-uri="/create-user">
+                    <i class="pe-7s-add-user"></i>
+                    <p class="sidebar-name">Tạo Tài Khoản Nhân Viên</p>
+                </a>
+            </li>
+            <li class="menu-nav-item" id="changePasswordMenu">
+                <a href="/change-password" class="menu-nav-link"
+                   data-name="Đổi Mật Khẩu"
+                   data-uri="/change-password">
+                    <i class="pe-7s-key"></i>
+                    <p class="sidebar-name">Đổi mật khẩu</p>
+                </a>
+            </li>
+            <li class="menu-nav-item">
+                <a href="/logout" class="menu-nav-link"
+                   data-name="Đăng Xuất"
+                   data-uri="/logout"
+                   id="logoutSidebar">
+                    <i class="pe-7s-power"></i>
+                    <p class="sidebar-name">Đăng Xuất</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

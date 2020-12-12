@@ -1,0 +1,179 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Trang Chủ - Vietin</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{css/animate.min.css}" rel="stylesheet"/>
+    <link th:href="@{css/light-bootstrap-dashboard.css}" rel="stylesheet"/>
+    <link th:href="@{css/vietin/main.css}" rel="stylesheet"/>
+    <link th:href="@{css/vietin/dashboard.css}" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link th:href="@{css/pe-icon-7-stroke.css}" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div th:replace="sections/sidebar :: sidebar"></div>
+
+        <div class="main-panel">
+            <div th:replace="sections/navbar :: navbar"></div>
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">Danh sách đơn hàng</h4>
+                                </div>
+                                <div class="content table-responsive table-full-width">
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                            <th>#STT</th>
+                                            <th>Mã đơn hàng</th>
+                                            <th>Đại diện bên A</th>
+                                            <th>Đại diện bên B</th>
+                                            <th>SL ấn phẩm</th>
+                                            <th>Trang thái</th>
+                                            <th>T/G Cập nhập</th>
+                                            <th></th>
+                                        </thead>
+                                        <tbody id="orderList"><!-- Order List Information --></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div th:replace="sections/footer :: footer"></div>
+        </div>
+    </div>
+
+    <!-- Mini Modal -->
+    <div class="modal fade modal-primary" id="orderInfoModal" tabindex="-1" role="dialog" aria-labelledby="orderInfoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl" style="width: 1000px" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-body-header">
+                        <button class="btn-order-info-tab active">Đơn Hàng</button>
+                        <button class="btn-order-info-tab">Phiếu Sản Xuất</button>
+                    </div>
+                    <div class="modal-body-body">
+                        <!-- A Information -->
+                        <div class="row section-title">Thông tin bên A</div>
+                        <div class="row section-content">
+                            <div class="col-md-6">
+                                <span class="title">Tên công ty:</span>
+                                <span class="label">-</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="title">Người liên hệ:</span>
+                                <span class="label">-</span>
+                            </div>
+                        </div>
+                        <div class="row section-content">
+                            <div class="col-md-6">
+                                <span class="title">Email:</span>
+                                <span class="label">-</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="title">Số điện thoại:</span>
+                                <span class="label">-</span>
+                            </div>
+                        </div>
+                        <div class="row section-content">
+                            <div class="col-md-12">
+                                <span class="title">Địa chỉ:</span>
+                                <span class="label">-</span>
+                            </div>
+                        </div>
+
+
+                        <!-- B Information -->
+                        <div class="row section-title">Thông tin bên B</div>
+                        <div class="row section-content">
+                            <div class="col-md-12">
+                                <span class="title">Người đại điện:</span>
+                                <span class="label">-</span>
+                            </div>
+                        </div>
+                        <div class="row section-content">
+                            <div class="col-md-6">
+                                <span class="title">Chức vụ:</span>
+                                <span class="label">-</span>
+                            </div>
+                            <div class="col-md-6">
+                                <span class="title">Số điện thoại:</span>
+                                <span class="label">-</span>
+                            </div>
+                        </div>
+
+                        <!-- B Publication Information -->
+                        <div class="row section-title">Thông tin ấn phẩm:</div>
+                        <div class="row section-content">
+                            <div class="col-md-12 content table-responsive table-full-width"
+                                 style="margin-top: 0; padding-right: 0;">
+                            <table class="table table-hover table-striped" style="margin-bottom: 0;">
+                                    <thead>
+                                        <th>STT</th>
+                                        <th>Tên</th>
+                                        <th>Số lượng (pcs)</th>
+                                        <th></th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Ấn phẩm 1</td>
+                                            <td>10</td>
+                                            <td><i class="pe-7s-info"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Ấn phẩm 2</td>
+                                            <td>20</td>
+                                            <td><i class="pe-7s-info"></i></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Ấn phẩm 3</td>
+                                            <td>30</td>
+                                            <td><i class="pe-7s-info"></i></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-link" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  End Modal -->
+
+    <script type="application/javascript" th:src="@{js/jquery.3.2.1.min.js}"></script>
+    <script type="application/javascript" th:src="@{js/bootstrap.min.js}"></script>
+    <script type="application/javascript" th:src="@{js/bootstrap-notify.js}"></script>
+    <script type="application/javascript" th:src="@{js/light-bootstrap-dashboard.js}"></script>
+
+    <script type="application/javascript" th:src="@{js/vietin/rest.js}"></script>
+    <script type="application/javascript" th:src="@{js/vietin/common-api.js}"></script>
+    <script type="application/javascript" th:src="@{js/vietin/common.js}"></script>
+    <script type="application/javascript" th:src="@{js/vietin/constant.js}"></script>
+    <script type="application/javascript" th:src="@{js/vietin/dashboard.js}"></script>
+</body>
+</html>
