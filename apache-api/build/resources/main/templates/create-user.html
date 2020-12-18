@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Tạo Tài Khoản - Vietin</title>
+    <title>Tạo Tài Khoản</title>
 
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -13,8 +13,8 @@
     <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" />
     <link th:href="@{css/animate.min.css}" rel="stylesheet"/>
     <link th:href="@{css/light-bootstrap-dashboard.css}" rel="stylesheet"/>
-    <link th:href="@{css/vietin/main.css}" rel="stylesheet"/>
-    <link th:href="@{css/vietin/create-user.css}" rel="stylesheet"/>
+    <link th:href="@{css/apache/main.css}" rel="stylesheet"/>
+    <link th:href="@{css/apache/create-user.css}" rel="stylesheet"/>
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -34,7 +34,7 @@
                         <div class="col-md-12">
                             <div class="card card-user">
                                 <div class="card-header">
-                                    <h4 class="card-title">Thông tin nhân viên</h4>
+                                    <h4 class="card-title">Thông tin tài khoản</h4>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
@@ -62,22 +62,11 @@
                                         <div class="col-md-6 pr-1">
                                             <div class="form-group">
                                                 <label>Mật khẩu</label>
-                                                <input type="text" class="form-control" value="" id="userPassword">
+                                                <input type="password" class="form-control" value="" id="userPassword" />
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Chức vụ</label>
-                                                <select id="userRole" class="form-control">
-                                                    <option value="0">Administrator</option>
-                                                    <option value="1">Phòng Quản Lý</option>
-                                                    <option value="2">Phòng Kinh Doanh</option>
-                                                    <option value="3">Phòng Thi Công</option>
-                                                </select>
-                                            </div>
-                                        </div>
                                         <div class="col-md-6 create-user-btn-group">
                                             <label>&emsp;</label>
                                             <button type="button" class="btn btn-main" id="btnCreateUser">Tạo Tài Khoản</button>
@@ -101,10 +90,10 @@
     <script type="application/javascript" th:src="@{js/bootstrap-notify.js}"></script>
     <script type="application/javascript" th:src="@{js/light-bootstrap-dashboard.js}"></script>
 
-    <script type="application/javascript" th:src="@{js/vietin/rest.js}"></script>
-    <script type="application/javascript" th:src="@{js/vietin/common-api.js}"></script>
-    <script type="application/javascript" th:src="@{js/vietin/common.js}"></script>
-    <script type="application/javascript" th:src="@{js/vietin/constant.js}"></script>
-    <script type="application/javascript" th:src="@{js/vietin/create-user.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/rest.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/common-api.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/common.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/constant.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/create-user.js}"></script>
 </body>
 </html>

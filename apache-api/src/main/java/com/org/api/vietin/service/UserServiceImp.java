@@ -13,7 +13,7 @@ import java.util.Objects;
 /**
  * UserServiceImp
  *
- * @author khal
+ *
  * @since 2020/11/29
  */
 @Service
@@ -35,7 +35,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     public boolean createUser(UserDataset userDataset) {
-        String userId = genIDComponent.getId(7, "vi_user");
+        String userId = genIDComponent.getId(7, "ca_user");
         userDataset.setId(userId);
         userDataset.setPassword(EncryptUtils.encryptMD5(userDataset.getPassword()));
         return userMapper.insUser(userDataset) != 0;

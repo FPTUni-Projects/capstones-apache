@@ -9,7 +9,7 @@ import org.springframework.core.io.ClassPathResource;
 /**
  * AppConstant
  *
- * @author khal
+ *
  * @since 2020/06/13
  */
 @Configuration

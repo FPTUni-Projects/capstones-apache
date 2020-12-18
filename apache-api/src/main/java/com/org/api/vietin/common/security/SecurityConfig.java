@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 /**
  * SecurityConfig
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @EnableWebSecurity

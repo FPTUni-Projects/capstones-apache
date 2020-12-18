@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Select;
 /**
  * AuthSessionMapper
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @Mapper
@@ -30,9 +30,9 @@ public interface AuthSessionMapper {
             "   vias.login_time AS loginTime, " +
             "   vias.logout_time AS logoutTime " +
             "FROM " +
-            "   vi_auth_session vias " +
+            "   ca_auth_session vias " +
             "INNER JOIN " +
-            "   vi_user viu " +
+            "   ca_user viu " +
             "   ON " +
             "       vias.user_id = viu.id " +
             "       AND vias.auth_key = viu.password " +
@@ -48,7 +48,7 @@ public interface AuthSessionMapper {
      * @param authSessionDataset
      * @return Integer
      */
-    @Insert("INSERT INTO vi_auth_session ( " +
+    @Insert("INSERT INTO ca_auth_session ( " +
             "   user_id, " +
             "   session_id, " +
             "   expiration_time, " +
@@ -73,7 +73,7 @@ public interface AuthSessionMapper {
      * @return Integer
      */
     @Insert("UPDATE " +
-            "   vi_auth_session " +
+            "   ca_auth_session " +
             "SET " +
             "   timeout_flg = '1', " +
             "   logout_time = #{logoutTime} " +
@@ -91,7 +91,7 @@ public interface AuthSessionMapper {
      * @return Integer
      */
     @Insert("UPDATE " +
-            "   vi_auth_session " +
+            "   ca_auth_session " +
             "SET " +
             "   timeout_flg = #{timeoutFlg}, " +
             "   logout_time = #{logoutTime} " +

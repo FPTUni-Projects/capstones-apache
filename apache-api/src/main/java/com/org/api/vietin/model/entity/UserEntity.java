@@ -11,12 +11,12 @@ import java.io.Serializable;
 /**
  * UserEntity
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @Data
 @Entity
-@Table(name = "vi_user")
+@Table(name = "ca_user")
 public class UserEntity implements Serializable {
 
     @Id @Column(name = "id", length = 7, nullable = false)

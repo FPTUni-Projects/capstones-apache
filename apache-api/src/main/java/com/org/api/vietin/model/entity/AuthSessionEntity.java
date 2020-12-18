@@ -8,12 +8,12 @@ import java.io.Serializable;
 /**
  * AuthSessionEntity
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @Data
 @Entity
-@Table(name = "vi_auth_session")
+@Table(name = "ca_auth_session")
 public class AuthSessionEntity implements Serializable {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)

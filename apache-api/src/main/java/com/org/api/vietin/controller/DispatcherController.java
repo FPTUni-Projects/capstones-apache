@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * DispatcherController
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @Controller("mainDispatcherController")
@@ -27,6 +27,16 @@ public class DispatcherController implements ErrorController {
     @GetMapping(value = {"", "/", "/dashboard"})
     public String redirectDashboarPage(HttpServletRequest request) {
         return "dashboard";
+    }
+
+    @GetMapping(value = {"/create-rule"})
+    public String redirectCreateRulePage(HttpServletRequest request) {
+        return "create-rule";
+    }
+
+    @GetMapping(value = {"/manage-log"})
+    public String redirectManageLogPage(HttpServletRequest request) {
+        return "manage-log";
     }
 
     @GetMapping(value = {"/create-user"})

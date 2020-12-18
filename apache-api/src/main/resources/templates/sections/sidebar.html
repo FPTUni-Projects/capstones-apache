@@ -9,7 +9,7 @@
     -->
     <div class="sidebar-wrapper">
         <div class="logo-title">
-            <a href="/" >Vietin</a>
+            <a href="/" >APACHE<br/>MANAGEMENT</a>
         </div>
         <hr class="w-100" style="margin: 0" />
         <ul class="nav">
@@ -21,20 +21,28 @@
                     <p class="sidebar-name">Trang Chủ</p>
                 </a>
             </li>
-            <li class="menu-nav-item">
-                <a href="/create-order" class="menu-nav-link"
-                   data-name="Tạo Đơn Hàng,Tạo Phiếu Sản Xuất"
-                   data-uri="/create-order,/create-product-slip">
-                    <i class="pe-7s-note2"></i>
-                    <p class="sidebar-name">Tạo Đơn Hàng</p>
+            <li class="menu-nav-item" id="createRuleMenu">
+                <a href="/create-rule" class="menu-nav-link"
+                   data-name="Tạo Rules"
+                   data-uri="/create-rule">
+                    <i class="pe-7s-config"></i>
+                    <p class="sidebar-name">Tạo Rules</p>
+                </a>
+            </li>
+            <li class="menu-nav-item" id="logManagementMenu">
+                <a href="/manage-log" class="menu-nav-link"
+                   data-name="Quản Lý Log"
+                   data-uri="/manage-log">
+                    <i class="pe-7s-file"></i>
+                    <p class="sidebar-name">Quản Lý Log</p>
                 </a>
             </li>
             <li class="menu-nav-item" id="createUserMenu">
                 <a href="/create-user" class="menu-nav-link"
-                   data-name="Tạo Tài Khoản Nhân Viên"
+                   data-name="Tạo Tài Khoản"
                    data-uri="/create-user">
                     <i class="pe-7s-add-user"></i>
-                    <p class="sidebar-name">Tạo Tài Khoản Nhân Viên</p>
+                    <p class="sidebar-name">Tạo Tài Khoản</p>
                 </a>
             </li>
             <li class="menu-nav-item" id="changePasswordMenu">

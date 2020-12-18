@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Main-Class: org.springframework.boot.loader.JarLauncher
-Start-Class: com.org.api.vietin.VietinApplication
+Start-Class: com.org.api.vietin.ApacheApplication
 Spring-Boot-Version: 2.4.0
 Spring-Boot-Classes: BOOT-INF/classes/
 Spring-Boot-Lib: BOOT-INF/lib/

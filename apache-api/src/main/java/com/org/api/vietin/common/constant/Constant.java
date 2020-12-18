@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * Constant
  *
- * @author KhaL
+ *
  * @since 2020/06/13
  */
 @Getter
@@ -21,5 +21,11 @@ public class Constant {
      */
     @Value("${DIR.ROOT}")
     private String rootDir;
+
+    /**
+     * Log Directory
+     */
+    @Value("${DIR.LOG}")
+    private String logDir;
 
 }

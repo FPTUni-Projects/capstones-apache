@@ -7,14 +7,14 @@ import org.apache.ibatis.annotations.*;
 /**
  * UserMapper
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @Mapper
 public interface UserMapper {
 
     @Update("UPDATE " +
-            "   vi_user " +
+            "   ca_user " +
             "SET " +
             "   password = #{newPassword} " +
             "WHERE " +
@@ -34,7 +34,7 @@ public interface UserMapper {
             "   password," +
             "   role_id AS roleId " +
             "FROM " +
-            "   vi_user " +
+            "   ca_user " +
             "WHERE " +
             "   username = #{username} " +
             "   AND password = #{password}" +
@@ -55,7 +55,7 @@ public interface UserMapper {
             "   role_id AS roleId, " +
             "   status " +
             "FROM " +
-            "   vi_user " +
+            "   ca_user " +
             "WHERE " +
             "   id = #{id} ")
     UserDataset selUserInfo(@Param("id") String id);
@@ -65,7 +65,7 @@ public interface UserMapper {
      * @param userDataset
      * @return Integer
      */
-    @Insert("INSERT INTO vi_user( " +
+    @Insert("INSERT INTO ca_user( " +
             "   id, " +
             "   username, " +
             "   password, " +

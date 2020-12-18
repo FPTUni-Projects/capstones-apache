@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 /**
  * ResourceHandlerConfig
  *
- * @author khal
+ *
  * @since 2020/07/06
  */
 @Configuration

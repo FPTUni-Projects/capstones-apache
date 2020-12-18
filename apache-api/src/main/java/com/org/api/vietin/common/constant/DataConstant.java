@@ -3,7 +3,7 @@ package com.org.api.vietin.common.constant;
 /**
  * DataConstant
  *
- * @author khal
+ *
  * @since 2020/11/28
  */
 public interface DataConstant {

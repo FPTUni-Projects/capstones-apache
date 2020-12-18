@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * AuthenticateService
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 public interface AuthenticateService {

@@ -10,7 +10,7 @@ import java.util.Optional;
 /**
  * CookiesUtils
  *
- * @author khal
+ *
  * @since 2020/06/13
  */
 public class CookiesUtils {

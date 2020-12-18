@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 /**
  * IDHelperMapper
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @Mapper

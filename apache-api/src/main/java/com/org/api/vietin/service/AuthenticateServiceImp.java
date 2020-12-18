@@ -22,7 +22,7 @@ import java.util.UUID;
 /**
  * AuthenticateServiceImp
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @Service

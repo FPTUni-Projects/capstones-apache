@@ -15,7 +15,7 @@ import java.io.IOException;
 /**
  * AuthenticateFilter
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @Order(1)

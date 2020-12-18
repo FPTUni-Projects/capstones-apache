@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * AuthenticateController
  *
- * @author khal
+ *
  * @since 2020/11/14
  */
 @RestController
