@@ -64,34 +64,34 @@ const DASHBOARD = {
                     let disabledChecked = item.status === CONSTANT.RULE_STATUS.DISABLED.id ? 'checked' : ''
 
                     $('#ruleList').append(`
-                                            <tr>
-                                                <td>${index + 1}</td>
-                                                <td>${item.name}</td>
-                                                <td>${item.description}</td>
-                                                <td>${statusHtml}</td>
-                                                <td>${item.publisher}</td>
-                                                <td>
-                                                    <button class="btn-main" onclick="DASHBOARD.downloadRule('${item.id}', '${item.userId}')">Tải Rules</button>
+                                            <tr style="width: 100%">
+                                                <td style="width: 5%;">${index + 1}</td>
+                                                <td style="width: 10%;word-break: break-word;">${item.name}</td>
+                                                <td style="width: 27%;word-break: break-word;">${item.description}</td>
+                                                <td style="width: 7%;word-break: break-word;">${statusHtml}</td>
+                                                <td style="width: 10%;word-break: break-word;">${item.publisher}</td>
+                                                <td style="width: 10%;word-break: break-word;">
+                                                    <button class="btn-main" onclick="DASHBOARD.downloadRule('${item.id}', '${item.userId}')">Download Rules</button>
                                                 </td>
-                                                <td class="form-group">
+                                                <td class="form-group" style="width: 23%;word-break: break-word;">
                                                     <span style="font-size: 1.4rem; margin-right: 1.5rem;">
-                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '0')"
+                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '${item.userId}', '0')"
                                                                id="ruleStatusReady${index}" value="0" ${readyChecked} /> 
                                                         <label style="font-weight: bold;" class="text-info" for="ruleStatusReady${index}">Ready</label>
                                                     </span>
                                                     <span style="font-size: 1.4rem; margin-right: 1.5rem; font-weight: bold;" class="text-success">
-                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '1')"
+                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '${item.userId}', '1')"
                                                                id="ruleStatusEnabled${index}" value="1" ${enabledChecked} /> 
                                                         <label style="font-weight: bold;" class="text-success" for="ruleStatusEnabled${index}">Enabled</label>
                                                     </span>
                                                     <span style="font-size: 1.4rem; margin-right: 1.5rem; font-weight: bold;" class="text-danger">
-                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '2')"
+                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '${item.userId}', '2')"
                                                                id="ruleStatusDisabled${index}" value="2" ${disabledChecked} /> 
                                                         <label style="font-weight: bold;" class="text-danger" for="ruleStatusDisabled${index}">Disabled</label>
                                                     </span>
                                                 </td>
-                                                <td>
-                                                    <button class="btn-main" onclick="DASHBOARD.removeRule('${item.id}', '${item.userId}')">Xóa</button>
+                                                <td style="width: 13%;word-break: break-word;">
+                                                    <button class="btn-main" onclick="DASHBOARD.deleteRule('${item.id}', '${item.userId}')">Delete</button>
                                                 </td>
                                             </tr>`)
                 })
@@ -103,7 +103,7 @@ const DASHBOARD = {
         })
     },
 
-    removeRule (_ruleId, _userId) {
+    deleteRule (_ruleId, _userId) {
         REST.get('/vi/rule/api/v1/remove-rule', {
             ruleId: _ruleId,
             userId: _userId
@@ -111,38 +111,39 @@ const DASHBOARD = {
         .then(response => {
             if (response) {
                 DASHBOARD.getAllRule()
-                COMMON.toastMsg('Xóa rule thành công.', CONSTANT.MSG_TYPE.SUCCESS)
+                COMMON.toastMsg('Delete rule success.', CONSTANT.MSG_TYPE.SUCCESS)
             } else {
-                COMMON.toastMsg('Xóa rule không thành công.', CONSTANT.MSG_TYPE.ERROR)
+                COMMON.toastMsg('Delete rule failed.', CONSTANT.MSG_TYPE.ERROR)
             }
         }).catch(error => {
             if (error.responseText) {
-                COMMON.toastMsg('Xóa rule không thành công.', CONSTANT.MSG_TYPE.ERROR)
+                COMMON.toastMsg('Delete rule failed.', CONSTANT.MSG_TYPE.ERROR)
             } else {
                 DASHBOARD.getAllRule()
-                COMMON.toastMsg('Xóa rule thành công.', CONSTANT.MSG_TYPE.SUCCESS)
+                COMMON.toastMsg('Delete rule success.', CONSTANT.MSG_TYPE.SUCCESS)
             }
         })
     },
 
-    updateRule (_ruleId, _status) {
+    updateRule (_ruleId, _userId, _status) {
         REST.get('/vi/rule/api/v1/update-rule', {
             ruleId: _ruleId,
+            userId: _userId,
             status: _status
         })
         .then(response => {
             if (response) {
                 DASHBOARD.getAllRule()
-                COMMON.toastMsg('Cập nhập rule thành công.', CONSTANT.MSG_TYPE.SUCCESS)
+                COMMON.toastMsg('Update rule success.', CONSTANT.MSG_TYPE.SUCCESS)
             } else {
-                COMMON.toastMsg('Cập nhập rule không thành công.', CONSTANT.MSG_TYPE.ERROR)
+                COMMON.toastMsg('Update rule failed.', CONSTANT.MSG_TYPE.ERROR)
             }
         }).catch(error => {
             if (error.responseText) {
-                COMMON.toastMsg('Cập nhập rule không thành công.', CONSTANT.MSG_TYPE.ERROR)
+                COMMON.toastMsg('Update rule failed.', CONSTANT.MSG_TYPE.ERROR)
             } else {
                 DASHBOARD.getAllRule()
-                COMMON.toastMsg('Cập nhập rule thành công.', CONSTANT.MSG_TYPE.SUCCESS)
+                COMMON.toastMsg('Update rule success.', CONSTANT.MSG_TYPE.SUCCESS)
             }
         })
     },

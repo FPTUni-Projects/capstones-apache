@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 /**
  * UserController
@@ -46,4 +47,13 @@ public class UserController {
         return userService.changePassword(userPasswordDataset);
     }
 
+    @GetMapping(value = "/get-all-user", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<UserDataset> getAllUser() {
+        return userService.getAllUser();
+    }
+
+    @GetMapping(value = "/update-user-status", produces = MediaType.APPLICATION_JSON_VALUE)
+    public boolean updateUserStatus(@RequestParam("userId") String userId) {
+        return userService.updateUserStatus(userId);
+    }
 }

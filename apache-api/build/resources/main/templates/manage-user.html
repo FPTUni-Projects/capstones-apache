@@ -1,0 +1,88 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Manage User</title>
+
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" />
+    <link th:href="@{css/animate.min.css}" rel="stylesheet"/>
+    <link th:href="@{css/light-bootstrap-dashboard.css}" rel="stylesheet"/>
+    <link th:href="@{css/apache/main.css}" rel="stylesheet"/>
+    <link th:href="@{css/apache/dashboard.css}" rel="stylesheet"/>
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link th:href="@{css/pe-icon-7-stroke.css}" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div th:replace="sections/sidebar :: sidebar"></div>
+
+        <div class="main-panel">
+            <div th:replace="sections/navbar :: navbar"></div>
+
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">List Logs</h4>
+                                </div>
+                                <div class="content table-responsive table-full-width">
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                            <th>#STT</th>
+                                            <th>Full name</th>
+                                            <th>Username</th>
+                                            <th>Phone number</th>
+                                            <th>Role</th>
+                                            <th>Delete</th>
+                                        </thead>
+                                        <tbody id="userList"><!-- Order List Information --></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div th:replace="sections/footer :: footer"></div>
+        </div>
+    </div>
+
+    <style>
+        .btn-top {
+            position: fixed;
+            right: 2rem;
+            bottom: 7rem;
+            z-index: 99999;
+            width: 5rem;
+            height: 5rem;
+            font-size: 1.4rem;
+            font-weight: bold;
+            outline: none;
+        }
+    </style>
+    <button class="btn-main btn-top" style="border-radius: 50%;" onclick="document.body.scrollTop = 0;document.documentElement.scrollTop = 0;">Top</button>
+
+    <script type="application/javascript" th:src="@{js/jquery.3.2.1.min.js}"></script>
+    <script type="application/javascript" th:src="@{js/bootstrap.min.js}"></script>
+    <script type="application/javascript" th:src="@{js/bootstrap-notify.js}"></script>
+    <script type="application/javascript" th:src="@{js/light-bootstrap-dashboard.js}"></script>
+
+    <script type="application/javascript" th:src="@{js/apache/rest.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/common-api.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/common.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/constant.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/manage-user.js}"></script>
+</body>
+</html>

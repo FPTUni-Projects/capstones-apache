@@ -49,10 +49,8 @@ public class LogServiceImp implements LogService {
                         while (Objects.nonNull(line)) {
                             if (line.contains("[") && line.contains("]")) {
                                 String tempInfo1 = line.substring(line.indexOf("[") + 1, line.lastIndexOf("]"));
-                                System.out.println(tempInfo1);
 
                                 tempInfo1 = tempInfo1.replaceAll("] \\[", "@@");
-                                System.out.println(tempInfo1);
                                 String[] tempInfo1Arr = tempInfo1.split("@@");
                                 String time = tempInfo1Arr[0];
                                 String error = tempInfo1Arr[1];

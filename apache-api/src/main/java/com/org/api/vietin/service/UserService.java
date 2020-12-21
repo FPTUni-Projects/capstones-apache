@@ -3,6 +3,8 @@ package com.org.api.vietin.service;
 import com.org.api.vietin.model.dataset.UserDataset;
 import com.org.api.vietin.model.dataset.UserPasswordDataset;
 
+import java.util.List;
+
 /**
  * UserService
  *
@@ -14,5 +16,7 @@ public interface UserService {
     UserDataset getUserInfo(String id);
     boolean createUser(UserDataset userDataset);
     boolean changePassword(UserPasswordDataset userPasswordDataset);
+    boolean updateUserStatus(String id);
+    List<UserDataset> getAllUser();
 
 }

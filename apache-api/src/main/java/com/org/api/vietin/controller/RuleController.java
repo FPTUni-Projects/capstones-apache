@@ -47,8 +47,9 @@ public class RuleController {
 
     @GetMapping(value = "/update-rule", produces = MediaType.APPLICATION_JSON_VALUE)
     public boolean updateRule(@RequestParam("ruleId") String ruleId,
+                              @RequestParam("userId") String userId,
                               @RequestParam("status") String status) {
-        return ruleService.updateRule(ruleId, status);
+        return ruleService.updateRule(ruleId, userId, status);
     }
 
     @GetMapping(value = "/download-rule", produces = MediaType.APPLICATION_JSON_VALUE)

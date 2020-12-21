@@ -18,7 +18,7 @@ public interface RuleService {
     boolean createRule(RuleDataset ruleDataset);
     List<RuleDataset> getAllRule(String userId, String roleId);
     boolean removeRule (String id, String userId);
-    boolean updateRule (String id, String status);
+    boolean updateRule (String id, String userId, String status);
     RuleFileDataset downloadRule (String ruleId, String userId);
 
 }

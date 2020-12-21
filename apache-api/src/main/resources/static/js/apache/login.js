@@ -39,12 +39,12 @@ const LOGIN = {
                 if (response.status) {
                     location.reload()
                 } else {
-                    COMMON.toastMsg('Tên đăng nhập hoặc mật khẩu không đúng!', CONSTANT.MSG_TYPE.ERROR)
+                    COMMON.toastMsg('Incorrect username or password.', CONSTANT.MSG_TYPE.ERROR)
                 }
             }
         }).catch(error => {
             console.log(error)
-            COMMON.toastMsg('Tên đăng nhập hoặc mật khẩu không đúng!', CONSTANT.MSG_TYPE.ERROR)
+            COMMON.toastMsg('Incorrect username or password.', CONSTANT.MSG_TYPE.ERROR)
         })
     }
 }

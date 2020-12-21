@@ -8,6 +8,7 @@ import com.org.api.vietin.model.dataset.UserDataset;
 import com.org.api.vietin.model.dataset.UserPasswordDataset;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -47,5 +48,15 @@ public class UserServiceImp implements UserService {
         userPasswordDataset.setNewPassword(EncryptUtils.encryptMD5(userPasswordDataset.getNewPassword()));
         Integer result = userMapper.updPassword(userPasswordDataset);
         return Objects.nonNull(result) && result != 0;
+    }
+
+    @Override
+    public boolean updateUserStatus(String id) {
+        return userMapper.updStatus(id) != 0;
+    }
+
+    @Override
+    public List<UserDataset> getAllUser() {
+        return userMapper.selAllUser();
     }
 }

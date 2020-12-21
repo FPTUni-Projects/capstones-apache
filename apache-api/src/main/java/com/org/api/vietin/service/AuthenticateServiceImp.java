@@ -1,5 +1,6 @@
 package com.org.api.vietin.service;
 
+import com.org.api.vietin.common.constant.Constant;
 import com.org.api.vietin.common.utils.CookiesUtils;
 import com.org.api.vietin.common.utils.EncryptUtils;
 import com.org.api.vietin.mapper.AuthSessionMapper;
@@ -28,11 +29,13 @@ import java.util.UUID;
 @Service
 public class AuthenticateServiceImp implements AuthenticateService {
 
+    private final Constant constant;
     private final UserMapper userMapper;
     private final AuthSessionMapper authSessionMapper;
 
-    public AuthenticateServiceImp(UserMapper userMapper,
+    public AuthenticateServiceImp(Constant constant, UserMapper userMapper,
                                   AuthSessionMapper authSessionMapper) {
+        this.constant = constant;
         this.userMapper = userMapper;
         this.authSessionMapper = authSessionMapper;
     }
@@ -81,7 +84,7 @@ public class AuthenticateServiceImp implements AuthenticateService {
             String sessionId = UUID.randomUUID().toString();
             String loginTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
             String logoutTime = loginTime;
-            String expirationTime = LocalDateTime.now().plusHours(3).format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
+            String expirationTime = LocalDateTime.now().plusMinutes(constant.getAuthExpiration()).format(DateTimeFormatter.ofPattern("yyyyMMddHHmmss"));
             String roleId = userInfoForAuth.getRoleId();
 
             // expire all session by user's id

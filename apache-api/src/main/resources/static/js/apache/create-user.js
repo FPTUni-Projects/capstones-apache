@@ -27,13 +27,13 @@ const CREATE_USER = {
         let role = '1'
 
         if (!fullName) {
-            COMMON.toastMsg('Họ và tên không được để trống.', CONSTANT.MSG_TYPE.WARNING)
+            COMMON.toastMsg('Full name cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
         } else if (!phoneNumber) {
-            COMMON.toastMsg('Số điện thoại không được để trống.', CONSTANT.MSG_TYPE.WARNING)
+            COMMON.toastMsg('Phone number cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
         } else if (!username) {
-            COMMON.toastMsg('Tên đăng nhập không được để trống.', CONSTANT.MSG_TYPE.WARNING)
+            COMMON.toastMsg('Username cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
         } else if (!password) {
-            COMMON.toastMsg('Mật khẩu không được để trống.', CONSTANT.MSG_TYPE.WARNING)
+            COMMON.toastMsg('Password cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
         } else {
             let user = {
                 username: username,
@@ -47,14 +47,14 @@ const CREATE_USER = {
             REST.post('/vi/user/api/v1/create-user', user)
                 .then(response => {
                     if (response) {
-                        COMMON.toastMsg('Tạo tài khoản cho nhân viên thành công.', CONSTANT.MSG_TYPE.SUCCESS)
+                        COMMON.toastMsg('Create account success.', CONSTANT.MSG_TYPE.SUCCESS)
                         CREATE_USER.clearCreateUserForm()
                     } else {
-                        COMMON.toastMsg('Tạo tài khoản cho nhân viên không thành công.', CONSTANT.MSG_TYPE.ERROR)
+                        COMMON.toastMsg('Create account failed.', CONSTANT.MSG_TYPE.ERROR)
                     }
                 })
                 .catch(error => {
-                    COMMON.toastMsg('Tạo tài khoản cho nhân viên không thành công.', CONSTANT.MSG_TYPE.ERROR)
+                    COMMON.toastMsg('Create account failed.', CONSTANT.MSG_TYPE.ERROR)
                 })
         }
     },

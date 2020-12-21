@@ -56,6 +56,7 @@ const COMMON = {
             case CONSTANT.ROLES.USER.id:
                 $('#createUserMenu').remove()
                 $('#logManagementMenu').remove()
+                $('#userManagementMenu').remove()
                 break;
         }
     },

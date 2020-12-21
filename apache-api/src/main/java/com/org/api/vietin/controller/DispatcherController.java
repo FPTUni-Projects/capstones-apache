@@ -39,6 +39,11 @@ public class DispatcherController implements ErrorController {
         return "manage-log";
     }
 
+    @GetMapping(value = {"/manage-user"})
+    public String redirectManageUserPage(HttpServletRequest request) {
+        return "manage-user";
+    }
+
     @GetMapping(value = {"/create-user"})
     public String redirectCreateUserPage(HttpServletRequest request) {
         return "create-user";

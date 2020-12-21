@@ -27,11 +27,11 @@ const CREATE_RULE = {
         console.log(CREATE_RULE.cookieInfo)
 
         if (!ruleName) {
-            COMMON.toastMsg('Tên rule không được để trống.', CONSTANT.MSG_TYPE.WARNING)
+            COMMON.toastMsg('Rule\'s name cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
         } else if (!ruleFile || ruleFile.length === 0) {
-            COMMON.toastMsg('File rule chưa được chọn.', CONSTANT.MSG_TYPE.WARNING)
+            COMMON.toastMsg('File rule doesn\'t choose.', CONSTANT.MSG_TYPE.WARNING)
         } else if (!ruleDescription) {
-            COMMON.toastMsg('Miêu tả rule không được để trống.', CONSTANT.MSG_TYPE.WARNING)
+            COMMON.toastMsg('Rule\'s description cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
         } else {
             let formData = new FormData()
             formData.append('id', '-')
@@ -47,18 +47,18 @@ const CREATE_RULE = {
                 .then(response => {
                     alert(response)
                     if (response) {
-                        COMMON.toastMsg('Tạo rule thành công.', CONSTANT.MSG_TYPE.SUCCESS)
+                        COMMON.toastMsg('Create rule success.', CONSTANT.MSG_TYPE.SUCCESS)
                         CREATE_RULE.clearCreateRuleForm()
                     } else {
                         alert('a')
-                        COMMON.toastMsg('Tạo rule không thành công.', CONSTANT.MSG_TYPE.ERROR)
+                        COMMON.toastMsg('Create rule failed.', CONSTANT.MSG_TYPE.ERROR)
                     }
                 })
                 .catch(error => {
                     if (error.responseText) {
-                        COMMON.toastMsg('Tạo rule không thành công.', CONSTANT.MSG_TYPE.ERROR)
+                        COMMON.toastMsg('Create rule failed.', CONSTANT.MSG_TYPE.ERROR)
                     } else {
-                        COMMON.toastMsg('Tạo rule thành công.', CONSTANT.MSG_TYPE.SUCCESS)
+                        COMMON.toastMsg('Create rule success.', CONSTANT.MSG_TYPE.SUCCESS)
                         CREATE_RULE.clearCreateRuleForm()
                     }
                 })
