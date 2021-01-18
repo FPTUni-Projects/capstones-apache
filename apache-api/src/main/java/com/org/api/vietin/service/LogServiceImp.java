@@ -3,11 +3,13 @@ package com.org.api.vietin.service;
 import com.org.api.vietin.common.constant.Constant;
 import com.org.api.vietin.model.dataset.LogDataset;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.charset.Charset;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -26,7 +28,7 @@ public class LogServiceImp implements LogService {
     }
 
     @Override
-    public List<LogDataset> getAllLog() {
+    public List<String> getAllLog() {
         String logDir = constant.getLogDir();
 
         File logFolder = new File(logDir);
@@ -34,33 +36,22 @@ public class LogServiceImp implements LogService {
             return null;
         }
 
-        File[] logFileArr = logFolder.listFiles(file -> Objects.nonNull(file) && file.isFile() && file.getName().contains("error"));
-        List<LogDataset> results = new ArrayList<>();
+        File[] logFileArr = logFolder.listFiles(file -> Objects.nonNull(file) && file.isFile() && file.getName().equals("error.log"));
+        List<String> results = new ArrayList<>();
         Optional.ofNullable(Arrays.asList(logFileArr))
                 .orElse(Collections.emptyList())
                 .stream()
                 .filter(Objects::nonNull)
                 .forEach(file -> {
                     try {
-                        FileReader fr = new FileReader(file);
+                        FileReader fr = new FileReader(file, Charset.forName("UTF8"));
                         BufferedReader br = new BufferedReader(fr);
 
                         String line = br.readLine();
                         while (Objects.nonNull(line)) {
-                            if (line.contains("[") && line.contains("]")) {
-                                String tempInfo1 = line.substring(line.indexOf("[") + 1, line.lastIndexOf("]"));
-
-                                tempInfo1 = tempInfo1.replaceAll("] \\[", "@@");
-                                String[] tempInfo1Arr = tempInfo1.split("@@");
-                                String time = tempInfo1Arr[0];
-                                String error = tempInfo1Arr[1];
-                                String host = tempInfo1Arr[2];
-                                String description = line.substring(line.lastIndexOf("]") + 1).trim();
-
-                                LogDataset logDataset = new LogDataset(time, error, host, description);
-                                results.add(logDataset);
+                            if (StringUtils.hasLength(line)) {
+                                results.add(line);
                             }
-
                             line = br.readLine();
                         }
                     } catch (IOException e) {

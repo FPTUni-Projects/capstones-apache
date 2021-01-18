@@ -28,7 +28,7 @@ public class LogController {
     }
 
     @GetMapping(value = "/get-all-log", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<LogDataset> getAllLog() {
+    public List<String> getAllLog() {
         return logService.getAllLog();
     }
 

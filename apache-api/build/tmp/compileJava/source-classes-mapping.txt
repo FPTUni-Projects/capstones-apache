@@ -8,10 +8,10 @@ com/org/api/vietin/controller/AuthenticateController.java
  com.org.api.vietin.controller.AuthenticateController
 com/org/api/vietin/common/utils/CookiesUtils.java
  com.org.api.vietin.common.utils.CookiesUtils
-com/org/api/vietin/model/dataset/LogDataset.java
- com.org.api.vietin.model.dataset.LogDataset
 com/org/api/vietin/common/id/GenIDComponentImp.java
  com.org.api.vietin.common.id.GenIDComponentImp
+com/org/api/vietin/model/dataset/LogDataset.java
+ com.org.api.vietin.model.dataset.LogDataset
 com/org/api/vietin/filter/AuthenticateFilter.java
  com.org.api.vietin.filter.AuthenticateFilter
 com/org/api/vietin/common/utils/EncryptUtils.java

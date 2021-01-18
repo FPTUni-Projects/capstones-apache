@@ -11,6 +11,6 @@ import java.util.List;
  */
 public interface LogService {
 
-    List<LogDataset> getAllLog();
+    List<String> getAllLog();
 
 }

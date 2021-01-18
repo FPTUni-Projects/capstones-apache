@@ -43,10 +43,7 @@ const MANAGE_LOG = {
                     $('#logList').append(`
                                     <tr style="width: 100%;">
                                         <td style="width: 5%;">${index + 1}</td>
-                                        <td style="width: 15%;">${item.time}</td>
-                                        <td style="width: 15%;">${item.error}</td>
-                                        <td style="width: 15%;">${item.host}</td>
-                                        <td style="width: 50%; word-break: break-word;">${item.description}</td>
+                                        <td style="width: 15%;">${item}</td>
                                     </tr>`)
                 })
             }
