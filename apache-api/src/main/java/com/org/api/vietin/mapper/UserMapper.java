@@ -98,6 +98,8 @@ public interface UserMapper {
             "   full_name, " +
             "   phone_number, " +
             "   role_id, " +
+            "   server_name, " +
+            "   server_alias, " +
             "   status " +
             ") VALUES ( " +
             "   #{id}, " +
@@ -106,8 +108,19 @@ public interface UserMapper {
             "   #{fullName}, " +
             "   #{phoneNumber}, " +
             "   #{roleId}, " +
+            "   #{serverName}, " +
+            "   #{serverAlias}, " +
             "   #{status} " +
             ")")
     Integer insUser(UserDataset userDataset);
+
+    @Select("SELECT COUNT(1) FROM ca_user WHERE username = #{username}")
+    Integer selExistUsername(@Param("username") String username);
+
+    @Select("SELECT COUNT(1) FROM ca_user WHERE server_name = #{serverName}")
+    Integer selExistServerName(@Param("serverName") String serverName);
+
+    @Select("SELECT COUNT(1) FROM ca_user WHERE server_alias = #{serverAlias}")
+    Integer selExistServerAlias(@Param("serverAlias") String serverAlias);
 
 }

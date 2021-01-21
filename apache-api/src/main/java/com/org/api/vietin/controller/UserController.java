@@ -1,5 +1,6 @@
 package com.org.api.vietin.controller;
 
+import com.org.api.vietin.model.dataset.ErroMsgDataset;
 import com.org.api.vietin.model.dataset.UserDataset;
 import com.org.api.vietin.model.dataset.UserInfoAuthDataset;
 import com.org.api.vietin.model.dataset.UserPasswordDataset;
@@ -51,6 +52,14 @@ public class UserController {
     public List<UserDataset> getAllUser() {
         return userService.getAllUser();
     }
+
+    @GetMapping(value = "/check-exist", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ErroMsgDataset getAllUser(@RequestParam("serverName") String serverName,
+                                     @RequestParam("serverAlias") String serverAlias,
+                                     @RequestParam("username") String username) {
+        return userService.checkExist(serverName, serverAlias, username);
+    }
+
 
     @GetMapping(value = "/update-user-status", produces = MediaType.APPLICATION_JSON_VALUE)
     public boolean updateUserStatus(@RequestParam("userId") String userId) {

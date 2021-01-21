@@ -1,5 +1,6 @@
 package com.org.api.vietin.service;
 
+import com.org.api.vietin.model.dataset.ErroMsgDataset;
 import com.org.api.vietin.model.dataset.UserDataset;
 import com.org.api.vietin.model.dataset.UserPasswordDataset;
 
@@ -17,6 +18,7 @@ public interface UserService {
     boolean createUser(UserDataset userDataset);
     boolean changePassword(UserPasswordDataset userPasswordDataset);
     boolean updateUserStatus(String id);
+    ErroMsgDataset checkExist(String serverName, String serverAlias, String username);
     List<UserDataset> getAllUser();
 
 }

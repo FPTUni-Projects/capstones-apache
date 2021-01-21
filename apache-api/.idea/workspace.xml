@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="10341af4-b636-45ff-a0a3-98e6019f93f0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
@@ -8,20 +11,48 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/LogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogServiceImp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/DataConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/DataConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/UserDataset.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/UserDataset.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserServiceImp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/libs/capstonesapache-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/capstonesapache-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/manage-log.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/manage-log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/manage-log.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/manage-log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/constant-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/constant-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/create-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/create-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/create-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/LogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/manage-log.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/manage-log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/manage-log.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manage-log.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/DataConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/DataConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/UserDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/UserDataset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/constant-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/constant-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/create-user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/create-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/create-user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logs/access_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../logs/error_log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +63,21 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,13 +90,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="C:\Program Files\Apache Common\apache-maven-3.6.3\repository" />
+        <option name="mavenHome" value="C:/Program Files/Apache Common/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="C:\Program Files\Apache Common\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1lXpdMYOsgWTd7Thdx0VAXZwRIZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -58,15 +112,16 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
@@ -84,7 +139,41 @@
       <recent name="$PROJECT_DIR$/src/main/resources/static/css/apache" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ApacheApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="apache-api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="ApacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="capstonesapache.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.org.api.vietin.ApacheApplication" />
@@ -93,7 +182,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.apache-api [build]" />
+      </list>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -111,124 +206,12 @@
       <workItem from="1608550504049" duration="8062000" />
       <workItem from="1608579776864" duration="1159000" />
       <workItem from="1608713098749" duration="73000" />
+      <workItem from="1611203228490" duration="784000" />
+      <workItem from="1611204321898" duration="12517000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="440" y="187" key="#Project_Structure" timestamp="1607754325413">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="440" y="187" key="#Project_Structure/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607754325413" />
-    <state x="348" y="144" key="#VietinApplication" timestamp="1608218361242">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="348" y="144" key="#VietinApplication/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608218361242" />
-    <state x="304" y="184" width="1191" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608218385649">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="304" y="184" width="1191" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608218385649" />
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1608369366195">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1608369366195" />
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607993808233" />
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608219272287" />
-    <state x="2138" y="139" key="CommitChangelistDialog2" timestamp="1607986747736">
-      <screen x="1680" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2138" y="139" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607986747736" />
-    <state width="1638" height="833" key="GridCell.Tab.0.bottom" timestamp="1608570567139">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="833" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1608557725101" />
-    <state width="1638" height="675" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1607952040709" />
-    <state width="1638" height="833" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608570567139" />
-    <state width="1878" height="418" key="GridCell.Tab.0.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990774280" />
-    <state width="1638" height="346" key="GridCell.Tab.0.bottom/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608224525897" />
-    <state width="1638" height="833" key="GridCell.Tab.0.center" timestamp="1608570567135">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="833" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1608557725100" />
-    <state width="1638" height="675" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1607952040706" />
-    <state width="1638" height="833" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608570567135" />
-    <state width="1878" height="418" key="GridCell.Tab.0.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990774279" />
-    <state width="1638" height="346" key="GridCell.Tab.0.center/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608224525895" />
-    <state width="1638" height="833" key="GridCell.Tab.0.left" timestamp="1608570567134">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="833" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1608557725099" />
-    <state width="1638" height="675" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1607952040706" />
-    <state width="1638" height="833" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608570567134" />
-    <state width="1878" height="418" key="GridCell.Tab.0.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990774278" />
-    <state width="1638" height="346" key="GridCell.Tab.0.left/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608224525894" />
-    <state width="1638" height="833" key="GridCell.Tab.0.right" timestamp="1608570567136">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="833" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1608557725101" />
-    <state width="1638" height="675" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1607952040707" />
-    <state width="1638" height="833" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608570567136" />
-    <state width="1878" height="418" key="GridCell.Tab.0.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990774280" />
-    <state width="1638" height="346" key="GridCell.Tab.0.right/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608224525896" />
-    <state width="1638" height="833" key="GridCell.Tab.1.bottom" timestamp="1608570567144">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="833" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1608557725104" />
-    <state width="1638" height="675" key="GridCell.Tab.1.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1607952040711" />
-    <state width="1638" height="833" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608570567144" />
-    <state width="1878" height="418" key="GridCell.Tab.1.bottom/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990774283" />
-    <state width="1638" height="346" key="GridCell.Tab.1.bottom/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608224525900" />
-    <state width="1638" height="833" key="GridCell.Tab.1.center" timestamp="1608570567142">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="833" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1608557725103" />
-    <state width="1638" height="675" key="GridCell.Tab.1.center/0.25.1680.1025@0.25.1680.1025" timestamp="1607952040710" />
-    <state width="1638" height="833" key="GridCell.Tab.1.center/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608570567142" />
-    <state width="1878" height="418" key="GridCell.Tab.1.center/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990774282" />
-    <state width="1638" height="346" key="GridCell.Tab.1.center/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608224525898" />
-    <state width="1638" height="833" key="GridCell.Tab.1.left" timestamp="1608570567140">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="833" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1608557725102" />
-    <state width="1638" height="675" key="GridCell.Tab.1.left/0.25.1680.1025@0.25.1680.1025" timestamp="1607952040709" />
-    <state width="1638" height="833" key="GridCell.Tab.1.left/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608570567140" />
-    <state width="1878" height="418" key="GridCell.Tab.1.left/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990774281" />
-    <state width="1638" height="346" key="GridCell.Tab.1.left/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608224525897" />
-    <state width="1638" height="833" key="GridCell.Tab.1.right" timestamp="1608570567143">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state width="1638" height="833" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1608557725103" />
-    <state width="1638" height="675" key="GridCell.Tab.1.right/0.25.1680.1025@0.25.1680.1025" timestamp="1607952040710" />
-    <state width="1638" height="833" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608570567143" />
-    <state width="1878" height="418" key="GridCell.Tab.1.right/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990774282" />
-    <state width="1638" height="346" key="GridCell.Tab.1.right/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608224525899" />
-    <state x="328" y="103" key="SettingsEditor" timestamp="1608558656508">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="328" y="103" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1608558656508" />
-    <state x="328" y="103" key="SettingsEditor/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607754416429" />
-    <state x="626" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608448411057">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="626" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608448411057" />
-    <state x="1692" y="100" width="1898" height="1053" maximized="true" key="dock-window-1" timestamp="1608277926022">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="1680" y="0" width="1920" height="1080" key="dock-window-1/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607989035410" />
-    <state x="1692" y="100" width="1898" height="1053" maximized="true" key="dock-window-1/1680.100.1920.1055/0.25.1680.1025@0.25.1680.1025" timestamp="1608225020027" />
-    <state x="1680" y="75" width="1920" height="1080" key="dock-window-1/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1608219222423" />
-    <state x="1680" y="0" width="1920" height="1080" maximized="true" key="dock-window-2" timestamp="1608218386451">
-      <screen x="1680" y="75" width="1920" height="1080" />
-    </state>
-    <state x="0" y="0" width="1680" height="1050" key="dock-window-2/0.25.1680.1025@0.25.1680.1025" timestamp="1608004934887" />
-    <state x="1680" y="0" width="1920" height="1080" key="dock-window-2/1680.25.1920.1055/0.25.1680.1025@0.25.1680.1025" timestamp="1608047613420" />
-    <state x="482" y="258" width="829" height="550" key="find.popup" timestamp="1608551241916">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="482" y="258" width="829" height="550" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1608551241916" />
-    <state x="482" y="258" width="829" height="550" key="find.popup/1680.0.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607995666285" />
-    <state x="2231" y="265" width="818" height="550" key="find.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1607990712553" />
+    <option name="version" value="3" />
   </component>
 </project>

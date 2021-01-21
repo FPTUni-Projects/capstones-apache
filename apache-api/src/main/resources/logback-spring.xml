@@ -3,7 +3,8 @@
     <property resource="application.properties"/>
     <property name="commonLog"
               value="Time:%date{yyyy-MM-dd HH:mm:ss}\t"/>
-    <property name="logDir" value="/tmp/capstonesapachedb/logs" />
+<!--    <property name="logDir" value="/tmp/capstonesapachedb/logs" />-->
+    <property name="logDir" value="D:/working/FPTUni-Projects/capstones-apache/logs" />
     <!-- framework-file log -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${logDir}/${info.project.name}.log</file>

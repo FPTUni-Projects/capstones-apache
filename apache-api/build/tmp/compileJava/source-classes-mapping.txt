@@ -30,49 +30,51 @@ com/org/api/vietin/controller/RuleController.java
  com.org.api.vietin.controller.RuleController
 com/org/api/vietin/mapper/AuthSessionMapper.java
  com.org.api.vietin.mapper.AuthSessionMapper
-com/org/api/vietin/service/UserServiceImp.java
- com.org.api.vietin.service.UserServiceImp
+com/org/api/vietin/service/RuleService.java
+ com.org.api.vietin.service.RuleService
 com/org/api/vietin/model/dataset/UserPasswordDataset.java
  com.org.api.vietin.model.dataset.UserPasswordDataset
 com/org/api/vietin/common/utils/CommonUtils.java
  com.org.api.vietin.common.utils.CommonUtils
 com/org/api/vietin/common/constant/DataConstant.java
  com.org.api.vietin.common.constant.DataConstant
+com/org/api/vietin/model/dataset/ErroMsgDataset.java
+ com.org.api.vietin.model.dataset.ErroMsgDataset
 com/org/api/vietin/service/RuleServiceImp.java
  com.org.api.vietin.service.RuleServiceImp
 com/org/api/vietin/model/dataset/RuleDataset.java
  com.org.api.vietin.model.dataset.RuleDataset
-com/org/api/vietin/service/AuthenticateService.java
- com.org.api.vietin.service.AuthenticateService
 com/org/api/vietin/common/config/AppProfileConfig.java
  com.org.api.vietin.common.config.AppProfileConfig
-com/org/api/vietin/model/dataset/UserDataset.java
- com.org.api.vietin.model.dataset.UserDataset
+com/org/api/vietin/service/AuthenticateService.java
+ com.org.api.vietin.service.AuthenticateService
 com/org/api/vietin/ApacheApplication.java
  com.org.api.vietin.ApacheApplication
+com/org/api/vietin/model/dataset/UserDataset.java
+ com.org.api.vietin.model.dataset.UserDataset
 com/org/api/vietin/model/entity/UserEntity.java
  com.org.api.vietin.model.entity.UserEntity
-com/org/api/vietin/model/dataset/UserInfoAuthDataset.java
- com.org.api.vietin.model.dataset.UserInfoAuthDataset
 com/org/api/vietin/common/id/GenIDComponent.java
  com.org.api.vietin.common.id.GenIDComponent
+com/org/api/vietin/model/dataset/UserInfoAuthDataset.java
+ com.org.api.vietin.model.dataset.UserInfoAuthDataset
 com/org/api/vietin/service/LogServiceImp.java
  com.org.api.vietin.service.LogServiceImp
 com/org/api/vietin/common/constant/Constant.java
  com.org.api.vietin.common.constant.Constant
-com/org/api/vietin/service/LogService.java
- com.org.api.vietin.service.LogService
 com/org/api/vietin/common/config/ResourceHandlerConfig.java
  com.org.api.vietin.common.config.ResourceHandlerConfig
-com/org/api/vietin/model/dataset/AuthSessionDataset.java
- com.org.api.vietin.model.dataset.AuthSessionDataset
+com/org/api/vietin/service/LogService.java
+ com.org.api.vietin.service.LogService
 com/org/api/vietin/common/id/GenIDMapper.java
  com.org.api.vietin.common.id.GenIDMapper
+com/org/api/vietin/model/dataset/AuthSessionDataset.java
+ com.org.api.vietin.model.dataset.AuthSessionDataset
 com/org/api/vietin/controller/LogController.java
  com.org.api.vietin.controller.LogController
 com/org/api/vietin/service/AuthenticateServiceImp.java
  com.org.api.vietin.service.AuthenticateServiceImp
 com/org/api/vietin/model/entity/RuleEntity.java
  com.org.api.vietin.model.entity.RuleEntity
-com/org/api/vietin/service/RuleService.java
- com.org.api.vietin.service.RuleService
+com/org/api/vietin/service/UserServiceImp.java
+ com.org.api.vietin.service.UserServiceImp

@@ -26,6 +26,8 @@ public class UserDataset {
     private String fullName;
     private String phoneNumber;
     private String roleId;
+    private String serverName;
+    private String serverAlias;
     private String status;
 
 }

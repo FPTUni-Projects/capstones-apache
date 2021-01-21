@@ -24,6 +24,8 @@ const CREATE_USER = {
         let phoneNumber = $('#userPhoneNumber').val()
         let username = $('#userUsername').val()
         let password = $('#userPassword').val()
+        let serverName = $('#serverName').val()
+        let serverAlias = $('#serverAlias').val()
         let role = '1'
 
         if (!fullName) {
@@ -34,28 +36,44 @@ const CREATE_USER = {
             COMMON.toastMsg('Username cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
         } else if (!password) {
             COMMON.toastMsg('Password cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
+        } else if (!serverName) {
+            COMMON.toastMsg('Server name cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
+        } else if (!serverAlias) {
+            COMMON.toastMsg('Server alias cannot be empty.', CONSTANT.MSG_TYPE.WARNING)
         } else {
-            let user = {
-                username: username,
-                password: password,
-                fullName: fullName,
-                phoneNumber: phoneNumber,
-                roleId: role,
-                status: '0'
-            }
-
-            REST.post('/vi/user/api/v1/create-user', user)
-                .then(response => {
-                    if (response) {
-                        COMMON.toastMsg('Create account success.', CONSTANT.MSG_TYPE.SUCCESS)
-                        CREATE_USER.clearCreateUserForm()
-                    } else {
-                        COMMON.toastMsg('Create account failed.', CONSTANT.MSG_TYPE.ERROR)
+            REST.get('/vi/user/api/v1/check-exist', {
+                serverName: serverName,
+                serverAlias: serverAlias,
+                username: username
+            }).then(response => {
+                if (response.msg !== '') {
+                    COMMON.toastMsg(response.msg, CONSTANT.MSG_TYPE.WARNING)
+                } else {
+                    let user = {
+                        username: username,
+                        password: password,
+                        fullName: fullName,
+                        phoneNumber: phoneNumber,
+                        serverName: serverName,
+                        serverAlias: serverAlias,
+                        roleId: role,
+                        status: '0'
                     }
-                })
-                .catch(error => {
-                    COMMON.toastMsg('Create account failed.', CONSTANT.MSG_TYPE.ERROR)
-                })
+
+                    REST.post('/vi/user/api/v1/create-user', user)
+                        .then(response => {
+                            if (response) {
+                                COMMON.toastMsg('Create account success.', CONSTANT.MSG_TYPE.SUCCESS)
+                                CREATE_USER.clearCreateUserForm()
+                            } else {
+                                COMMON.toastMsg('Create account failed.', CONSTANT.MSG_TYPE.ERROR)
+                            }
+                        })
+                        .catch(error => {
+                            COMMON.toastMsg('Create account failed.', CONSTANT.MSG_TYPE.ERROR)
+                        })
+                }
+            })
         }
     },
 
@@ -64,6 +82,8 @@ const CREATE_USER = {
         $('#userPhoneNumber').val('')
         $('#userUsername').val('')
         $('#userPassword').val('')
+        $('#serverName').val('')
+        $('#serverAlias').val('')
     }
 }
 
