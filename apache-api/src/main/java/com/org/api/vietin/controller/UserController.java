@@ -54,7 +54,7 @@ public class UserController {
     }
 
     @GetMapping(value = "/check-exist", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ErroMsgDataset getAllUser(@RequestParam("serverName") String serverName,
+    public ErroMsgDataset checkExistUser(@RequestParam("serverName") String serverName,
                                      @RequestParam("serverAlias") String serverAlias,
                                      @RequestParam("username") String username) {
         return userService.checkExist(serverName, serverAlias, username);

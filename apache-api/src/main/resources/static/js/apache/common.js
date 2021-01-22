@@ -54,6 +54,8 @@ const COMMON = {
         switch (_role) {
             case CONSTANT.ROLES.ADMIN.id:
                 $('#createRuleMenu').remove()
+                $('#logManagementMenu').remove()
+                $('#userManagementMenu').remove()
                 break;
             case CONSTANT.ROLES.USER.id:
                 $('#createUserMenu').remove()

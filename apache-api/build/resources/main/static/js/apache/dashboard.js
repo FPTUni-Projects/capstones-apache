@@ -33,70 +33,43 @@ const DASHBOARD = {
     },
 
     initPage () {
-        DASHBOARD.getAllRule()
+        DASHBOARD.getAllUser()
     },
 
-    getAllRule () {
-        return REST.get('/vi/rule/api/v1/get-all-rule', {
-            userId: DASHBOARD.cookieInfo.uid,
-            roleId: DASHBOARD.cookieInfo.rid
-        })
+    getAllUser () {
+        return REST.get('/vi/user/api/v1/get-all-user')
         .then(response => {
             if (response && response.length !== 0) {
-                $('#ruleList').empty()
+                $('#userList').empty()
                 response.forEach((item, index) => {
                     let statusHtml = '<span class="main-badge main-badge-fill main-badge-BADGE_COLOR">STATUS_VALUE</span>'
                     switch (item.status) {
-                        case CONSTANT.RULE_STATUS.READY.id:
-                            statusHtml = statusHtml.replace('BADGE_COLOR', 'info')
-                            break
-                        case CONSTANT.RULE_STATUS.ENABLED.id:
+                        case CONSTANT.USER_STATUS.USER_ACTIVE.id:
                             statusHtml = statusHtml.replace('BADGE_COLOR', 'success')
                             break
-                        case CONSTANT.RULE_STATUS.DISABLED.id:
+                        case CONSTANT.USER_STATUS.USER_INACTIVE.id:
                             statusHtml = statusHtml.replace('BADGE_COLOR', 'danger')
                             break
                     }
-                    statusHtml = statusHtml.replace('STATUS_VALUE', COMMON.getValueByKey(CONSTANT.RULE_STATUS, 'id', 'name', item.status))
+                    statusHtml = statusHtml.replace('STATUS_VALUE', COMMON.getValueByKey(CONSTANT.USER_STATUS, 'id', 'name', item.status))
 
-                    let readyChecked = item.status === CONSTANT.RULE_STATUS.READY.id ? 'checked' : ''
-                    let enabledChecked = item.status === CONSTANT.RULE_STATUS.ENABLED.id ? 'checked' : ''
-                    let disabledChecked = item.status === CONSTANT.RULE_STATUS.DISABLED.id ? 'checked' : ''
+                    let enabledChecked = item.status === CONSTANT.USER_STATUS.USER_ACTIVE.id ? 'checked' : ''
+                    let disabledChecked = item.status === CONSTANT.USER_STATUS.USER_INACTIVE.id ? 'checked' : ''
 
-                    $('#ruleList').append(`
+                    $('#userList').append(`
                                             <tr style="width: 100%">
-                                                <td style="width: 5%;">${index + 1}</td>
-                                                <td style="width: 10%;word-break: break-word;">${item.name}</td>
-                                                <td style="width: 27%;word-break: break-word;">${item.description}</td>
-                                                <td style="width: 7%;word-break: break-word;">${statusHtml}</td>
-                                                <td style="width: 10%;word-break: break-word;">${item.publisher}</td>
-                                                <td style="width: 10%;word-break: break-word;">
-                                                    <button class="btn-main" onclick="DASHBOARD.downloadRule('${item.id}', '${item.userId}')">Download Rules</button>
-                                                </td>
-                                                <td class="form-group" style="width: 23%;word-break: break-word;">
-                                                    <span style="font-size: 1.4rem; margin-right: 1.5rem;">
-                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '${item.userId}', '0')"
-                                                               id="ruleStatusReady${index}" value="0" ${readyChecked} /> 
-                                                        <label style="font-weight: bold;" class="text-info" for="ruleStatusReady${index}">Ready</label>
-                                                    </span>
-                                                    <span style="font-size: 1.4rem; margin-right: 1.5rem; font-weight: bold;" class="text-success">
-                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '${item.userId}', '1')"
-                                                               id="ruleStatusEnabled${index}" value="1" ${enabledChecked} /> 
-                                                        <label style="font-weight: bold;" class="text-success" for="ruleStatusEnabled${index}">Enabled</label>
-                                                    </span>
-                                                    <span style="font-size: 1.4rem; margin-right: 1.5rem; font-weight: bold;" class="text-danger">
-                                                        <input type="radio" name="ruleStatus${index}" onchange="DASHBOARD.updateRule('${item.id}', '${item.userId}', '2')"
-                                                               id="ruleStatusDisabled${index}" value="2" ${disabledChecked} /> 
-                                                        <label style="font-weight: bold;" class="text-danger" for="ruleStatusDisabled${index}">Disabled</label>
-                                                    </span>
-                                                </td>
+                                                <td>${index + 1}</td>
+                                                <td style="word-break: break-word;">${item.fullName}</td>
+                                                <td style="word-break: break-word;">${item.username}</td>
+                                                <td style="word-break: break-word;">${item.serverName}</td>
+                                                <td style="word-break: break-word;">${statusHtml}</td>
                                                 <td style="width: 13%;word-break: break-word;">
-                                                    <button class="btn-main" onclick="DASHBOARD.deleteRule('${item.id}', '${item.userId}')">Delete</button>
+                                                    <button class="btn-main" onclick="window.location.href = '/user-info?id=${item.id}'">View Info</button>
                                                 </td>
                                             </tr>`)
                 })
             } else {
-                COMMON.toastMsg('Chưa có rule nào được tạo.', CONSTANT.MSG_TYPE.WARNING)
+                COMMON.toastMsg('Danh sách user trống!', CONSTANT.MSG_TYPE.WARNING)
             }
         }).catch(error => {
             COMMON.toastMsg('Hệ thống xử lý lỗi.', CONSTANT.MSG_TYPE.ERROR)

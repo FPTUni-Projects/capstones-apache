@@ -14,45 +14,48 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/apache-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/DataConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/DataConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/AuthenticateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/AuthenticateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/DispatcherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/DispatcherController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/LogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/RuleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/RuleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/filter/AuthenticateFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/filter/AuthenticateFilter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/UserDataset.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/UserDataset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/entity/UserEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/AuthenticateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/AuthenticateService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/AuthenticateServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/RuleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/RuleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/RuleServiceImp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserServiceImp.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserServiceImp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/capstonesapache-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/capstonesapache-0.0.1-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserServiceImp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/constant-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/constant-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/create-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/create-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/create-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/constant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/dashboard.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/DataConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/DataConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/DispatcherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/DispatcherController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/UserDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/UserDataset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/AuthenticateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/AuthenticateService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/AuthenticateServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/RuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/RuleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/RuleServiceImp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserServiceImp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/constant-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/constant-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/create-user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/create-user.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/create-user.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/access_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../logs/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/constant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +120,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/js/apache" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -135,24 +138,11 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources/static/js/apache" />
-      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/css/apache" />
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.ApacheApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="apache-api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -169,9 +159,7 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="ApacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -188,7 +176,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -208,10 +196,62 @@
       <workItem from="1608713098749" duration="73000" />
       <workItem from="1611203228490" duration="784000" />
       <workItem from="1611204321898" duration="12517000" />
+      <workItem from="1611237653844" duration="8335000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1638" height="223" key="GridCell.Tab.0.bottom" timestamp="1611273615230">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="223" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615230" />
+    <state width="1638" height="205" key="GridCell.Tab.0.bottom/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910493" />
+    <state width="1638" height="223" key="GridCell.Tab.0.center" timestamp="1611273615229">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="223" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615229" />
+    <state width="1638" height="205" key="GridCell.Tab.0.center/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910489" />
+    <state width="1638" height="223" key="GridCell.Tab.0.left" timestamp="1611273615229">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="223" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615229" />
+    <state width="1638" height="205" key="GridCell.Tab.0.left/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910488" />
+    <state width="1638" height="223" key="GridCell.Tab.0.right" timestamp="1611273615230">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="223" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615230" />
+    <state width="1638" height="205" key="GridCell.Tab.0.right/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910491" />
+    <state width="1638" height="223" key="GridCell.Tab.1.bottom" timestamp="1611273615232">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="223" key="GridCell.Tab.1.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615232" />
+    <state width="1638" height="205" key="GridCell.Tab.1.bottom/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910500" />
+    <state width="1638" height="223" key="GridCell.Tab.1.center" timestamp="1611273615231">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="223" key="GridCell.Tab.1.center/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615231" />
+    <state width="1638" height="205" key="GridCell.Tab.1.center/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910495" />
+    <state width="1638" height="223" key="GridCell.Tab.1.left" timestamp="1611273615230">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="223" key="GridCell.Tab.1.left/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615230" />
+    <state width="1638" height="205" key="GridCell.Tab.1.left/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910494" />
+    <state width="1638" height="223" key="GridCell.Tab.1.right" timestamp="1611273615231">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state width="1638" height="223" key="GridCell.Tab.1.right/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615231" />
+    <state width="1638" height="205" key="GridCell.Tab.1.right/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910496" />
+    <state x="0" y="0" width="1680" height="1050" key="dock-window-1" timestamp="1611273615941">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="0" y="0" width="1680" height="1050" key="dock-window-1/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615941" />
+    <state x="1680" y="75" width="1920" height="1080" key="dock-window-1/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611249468782" />
+    <state x="425" y="250" width="829" height="550" key="find.popup" timestamp="1611251684613">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="425" y="250" width="829" height="550" key="find.popup/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611251684613" />
   </component>
 </project>

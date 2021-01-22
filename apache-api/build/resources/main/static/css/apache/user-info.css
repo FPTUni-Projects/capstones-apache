@@ -1,0 +1,25 @@
+.card-user {
+    padding: 1rem;
+}
+.card-user .card-header .card-title {
+    color: #333;
+    margin: 0.5rem 1rem 1rem 0;
+    font-weight: bold;
+}
+.card-user #userPassword {
+    cursor: text;
+    font-weight: bold;
+    background: #fff;
+    color: #000;
+}
+.card-user .create-user-btn-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.card-user .create-user-btn-group button {
+    margin-top: 17px;
+    margin-left: 1rem !important;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}

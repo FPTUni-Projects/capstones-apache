@@ -60,12 +60,15 @@ public interface UserMapper {
             "   id, " +
             "   full_name AS fullName, " +
             "   username, " +
-            "   phone_number AS phoneNumber " +
+            "   phone_number AS phoneNumber, " +
+            "   server_name AS serverName, " +
+            "   server_alias AS serverAlias," +
+            "   status " +
             "FROM " +
             "   ca_user " +
             "WHERE " +
             "   role_id != '0' " +
-            "   AND status = '0'; ")
+            "   AND status != '1';")
     List<UserDataset> selAllUser();
 
     /**
@@ -79,6 +82,8 @@ public interface UserMapper {
             "   full_name AS fullName, " +
             "   phone_number AS phoneNumber, " +
             "   role_id AS roleId, " +
+            "   server_name AS serverName, " +
+            "   server_alias AS serverAlias," +
             "   status " +
             "FROM " +
             "   ca_user " +

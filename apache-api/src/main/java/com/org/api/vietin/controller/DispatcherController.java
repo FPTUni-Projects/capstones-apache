@@ -29,6 +29,11 @@ public class DispatcherController implements ErrorController {
         return "dashboard";
     }
 
+    @GetMapping(value = {"/user-info"})
+    public String redirectUserInfoPage(HttpServletRequest request) {
+        return "user-info";
+    }
+
     @GetMapping(value = {"/create-rule"})
     public String redirectCreateRulePage(HttpServletRequest request) {
         return "create-rule";
