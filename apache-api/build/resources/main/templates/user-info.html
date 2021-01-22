@@ -35,10 +35,18 @@
                             <div class="card card-user">
                                 <div class="card-header">
                                     <h4 class="card-title">Website Information</h4>
+                                    <button class="btn-main" id="btnBlockUser" data-user="1">Block User</button>
                                 </div>
-                                <div class="card-body" id="websiteInfoWrapper">
-
-                                    <div class="clearfix"></div>
+                                <div class="card-body" id="websiteInfoWrapper"></div>
+                            </div>
+                            <div class="card card-user">
+                                <div class="card-header">
+                                    <h4 class="card-title">Log</h4>
+                                </div>
+                                <div class="content table-responsive table-full-width">
+                                    <table class="table table-hover table-striped">
+                                        <tbody id="logLst" style="overflow-y: auto; max-height: 75vh;"><!-- List User Information --></tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>

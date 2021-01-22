@@ -31,42 +31,36 @@ public interface RuleMapper {
             "   id = #{id} ")
     Integer delRule(@Param("id") String id);
 
-    @Select("<script>" +
-            "SELECT " +
+    @Select("SELECT " +
             "   car.id, " +
             "   car.name, " +
             "   car.file_name AS fileName, " +
-            "   car.description AS description, " +
-            "   car.status," +
-            "   car.user_id AS userId, " +
-            "   cau.full_name AS publisher " +
+            "   car.status " +
             "FROM " +
             "   ca_rule car " +
-            "LEFT JOIN " +
-            "   ca_user cau " +
-            "   ON car.user_id = cau.id " +
+            "ORDER BY id")
+    List<RuleDataset> selRules();
+
+    @Select("SELECT " +
+            "   car.id, " +
+            "   car.name, " +
+            "   car.file_name AS fileName, " +
+            "   car.status " +
+            "FROM " +
+            "   ca_rule car " +
             "WHERE " +
-            "   1 = 1" +
-            "<if test='roleId != \"0\"'> " +
-            "   AND car.user_id = #{userId}" +
-            "</if>" +
-            "</script>")
-    List<RuleDataset> selRules(@Param("userId") String userId,
-                               @Param("roleId") String roleId);
+            "   car.status = '0';")
+    List<RuleDataset> selEnableRules();
 
     @Insert("INSERT INTO ca_rule ( " +
             "   id, " +
             "   name, " +
             "   file_name, " +
-            "   description, " +
-            "   user_id, " +
             "   status " +
             ") VALUES ( " +
             "   #{id}, " +
             "   #{name}, " +
             "   #{fileName}, " +
-            "   #{description}, " +
-            "   #{userId}, " +
             "   #{status} " +
             ")")
     Integer insRule(RuleDataset ruleDataset);

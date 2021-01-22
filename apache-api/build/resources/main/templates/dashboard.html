@@ -13,6 +13,7 @@
     <link th:href="@{css/bootstrap.min.css}" rel="stylesheet" />
     <link th:href="@{css/animate.min.css}" rel="stylesheet"/>
     <link th:href="@{css/light-bootstrap-dashboard.css}" rel="stylesheet"/>
+    <link th:href="@{css/Chart.min.css}" rel="stylesheet"/>
     <link th:href="@{css/apache/main.css}" rel="stylesheet"/>
     <link th:href="@{css/apache/dashboard.css}" rel="stylesheet"/>
 
@@ -20,7 +21,6 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link th:href="@{css/pe-icon-7-stroke.css}" rel="stylesheet" />
-    <link rel="stylesheet" href="../static/css/apache/user-info.css">
 </head>
 <body>
     <div class="wrapper">
@@ -51,6 +51,16 @@
                                     </table>
                                 </div>
                             </div>
+                            <div class="card">
+                                <div class="header">
+                                    <h4 class="title">Analysis Log Of Active VHost</h4>
+                                </div>
+                                <div class="card-body" style="padding-bottom: 2rem;">
+                                    <div id="canvas-holder">
+                                        <canvas id="chart-area"></canvas>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,6 +88,8 @@
     <script type="application/javascript" th:src="@{js/jquery.3.2.1.min.js}"></script>
     <script type="application/javascript" th:src="@{js/bootstrap.min.js}"></script>
     <script type="application/javascript" th:src="@{js/bootstrap-notify.js}"></script>
+    <script type="application/javascript" th:src="@{js/Chart.min.js}"></script>
+    <script type="application/javascript" th:src="@{js/ChartUtils.js}"></script>
     <script type="application/javascript" th:src="@{js/light-bootstrap-dashboard.js}"></script>
 
     <script type="application/javascript" th:src="@{js/apache/rest.js}"></script>

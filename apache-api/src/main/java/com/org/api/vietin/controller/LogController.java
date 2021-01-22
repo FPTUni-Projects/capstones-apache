@@ -3,6 +3,7 @@ package com.org.api.vietin.controller;
 import com.org.api.vietin.model.dataset.LogDataset;
 import com.org.api.vietin.model.dataset.RuleDataset;
 import com.org.api.vietin.model.dataset.RuleFileDataset;
+import com.org.api.vietin.model.dataset.ServerAnalysisDataset;
 import com.org.api.vietin.service.LogService;
 import com.org.api.vietin.service.RuleService;
 import lombok.Getter;
@@ -28,8 +29,13 @@ public class LogController {
     }
 
     @GetMapping(value = "/get-all-log", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<String> getAllLog() {
-        return logService.getAllLog();
+    public List<String> getAllLog(@RequestParam("serverName") String serverName) {
+        return logService.getAllLog(serverName);
+    }
+
+    @GetMapping(value = "/get-analysis-log", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<ServerAnalysisDataset> getAnalysisLog() {
+        return logService.getAnalysisLog();
     }
 
 }

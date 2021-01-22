@@ -21,14 +21,10 @@ public class RuleEntity implements Serializable {
 
     @Id @Column(name = "id", length = 7, nullable = false)
     private String id;
-    @Id @Column(name = "user_id", length = 7, nullable = false)
-    private String userId;
     @Column(name = "name", length = 255, nullable = false)
     private String name;
     @Column(name = "file_name", length = 255, nullable = false)
     private String fileName;
-    @Column(name = "description", length = 1000, nullable = false)
-    private String description;
     @Column(name = "status", length = 1, nullable = false)
     private String status;
 

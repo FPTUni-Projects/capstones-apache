@@ -18,6 +18,10 @@ const DASHBOARD = {
             COMMON.removeSidebar(response.rid)
             DASHBOARD.cookieInfo = response
 
+            if (response.rid !== '0') {
+                window.location.href = '/user-info?id=' + response.uid
+            }
+
             return response
         }).then(response => {
             if (response && response.uid) {
@@ -34,6 +38,7 @@ const DASHBOARD = {
 
     initPage () {
         DASHBOARD.getAllUser()
+        DASHBOARD.initChart()
     },
 
     getAllUser () {
@@ -43,18 +48,15 @@ const DASHBOARD = {
                 $('#userList').empty()
                 response.forEach((item, index) => {
                     let statusHtml = '<span class="main-badge main-badge-fill main-badge-BADGE_COLOR">STATUS_VALUE</span>'
-                    switch (item.status) {
-                        case CONSTANT.USER_STATUS.USER_ACTIVE.id:
+                    switch (item.userStatus) {
+                        case CONSTANT.USER_STATUS.ACTIVE.id:
                             statusHtml = statusHtml.replace('BADGE_COLOR', 'success')
                             break
-                        case CONSTANT.USER_STATUS.USER_INACTIVE.id:
+                        case CONSTANT.USER_STATUS.BLOCKED.id:
                             statusHtml = statusHtml.replace('BADGE_COLOR', 'danger')
                             break
                     }
-                    statusHtml = statusHtml.replace('STATUS_VALUE', COMMON.getValueByKey(CONSTANT.USER_STATUS, 'id', 'name', item.status))
-
-                    let enabledChecked = item.status === CONSTANT.USER_STATUS.USER_ACTIVE.id ? 'checked' : ''
-                    let disabledChecked = item.status === CONSTANT.USER_STATUS.USER_INACTIVE.id ? 'checked' : ''
+                    statusHtml = statusHtml.replace('STATUS_VALUE', COMMON.getValueByKey(CONSTANT.USER_STATUS, 'id', 'name', item.userStatus))
 
                     $('#userList').append(`
                                             <tr style="width: 100%">
@@ -64,78 +66,58 @@ const DASHBOARD = {
                                                 <td style="word-break: break-word;">${item.serverName}</td>
                                                 <td style="word-break: break-word;">${statusHtml}</td>
                                                 <td style="width: 13%;word-break: break-word;">
-                                                    <button class="btn-main" onclick="window.location.href = '/user-info?id=${item.id}'">View Info</button>
+                                                    <button class="btn-main" onclick="window.location.href = '/user-info?id=${item.userId}'">View Info</button>
                                                 </td>
                                             </tr>`)
                 })
             } else {
-                COMMON.toastMsg('Danh sách user trống!', CONSTANT.MSG_TYPE.WARNING)
+                COMMON.toastMsg('List user is empty!', CONSTANT.MSG_TYPE.WARNING)
             }
         }).catch(error => {
-            COMMON.toastMsg('Hệ thống xử lý lỗi.', CONSTANT.MSG_TYPE.ERROR)
+                console.log(error)
+            COMMON.toastMsg('System proceed failed.', CONSTANT.MSG_TYPE.ERROR)
         })
     },
 
-    deleteRule (_ruleId, _userId) {
-        REST.get('/vi/rule/api/v1/remove-rule', {
-            ruleId: _ruleId,
-            userId: _userId
+    initChart() {
+        REST.get('/vi/log/api/v1/get-analysis-log').then(response => {
+            if (response && response.length !== 0)
+                response = response.map(item => {
+                    item.color = DASHBOARD.getRandomRgb()
+                    return item
+                })
+
+            var ctx = document.getElementById('chart-area').getContext('2d');
+            window.myPie = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    datasets: [
+                        {
+                            data: response.map(item => item.totalLog),
+                            backgroundColor: response.map(item => item.color),
+                        },
+                    ],
+                    labels: response.map(item => item.serverName),
+                },
+                options: {
+                    plugins: {
+                        datalabels: {
+                            formatter: (value) => {
+                                return value + '%';
+                            }
+                        }
+                    }
+                }
+            })
         })
-        .then(response => {
-            if (response) {
-                DASHBOARD.getAllRule()
-                COMMON.toastMsg('Delete rule success.', CONSTANT.MSG_TYPE.SUCCESS)
-            } else {
-                COMMON.toastMsg('Delete rule failed.', CONSTANT.MSG_TYPE.ERROR)
-            }
-        }).catch(error => {
-            if (error.responseText) {
-                COMMON.toastMsg('Delete rule failed.', CONSTANT.MSG_TYPE.ERROR)
-            } else {
-                DASHBOARD.getAllRule()
-                COMMON.toastMsg('Delete rule success.', CONSTANT.MSG_TYPE.SUCCESS)
-            }
-        })
+
     },
 
-    updateRule (_ruleId, _userId, _status) {
-        REST.get('/vi/rule/api/v1/update-rule', {
-            ruleId: _ruleId,
-            userId: _userId,
-            status: _status
-        })
-        .then(response => {
-            if (response) {
-                DASHBOARD.getAllRule()
-                COMMON.toastMsg('Update rule success.', CONSTANT.MSG_TYPE.SUCCESS)
-            } else {
-                COMMON.toastMsg('Update rule failed.', CONSTANT.MSG_TYPE.ERROR)
-            }
-        }).catch(error => {
-            if (error.responseText) {
-                COMMON.toastMsg('Update rule failed.', CONSTANT.MSG_TYPE.ERROR)
-            } else {
-                DASHBOARD.getAllRule()
-                COMMON.toastMsg('Update rule success.', CONSTANT.MSG_TYPE.SUCCESS)
-            }
-        })
-    },
-
-    downloadRule (_ruleId, _userId) {
-        REST.get('/vi/rule/api/v1/download-rule', {
-            ruleId: _ruleId,
-            userId: _userId
-        }).then(response => {
-            if (response) {
-                let a = document.createElement("a")
-                a.href = response.base64
-                a.download = response.name
-                a.click(); //Downloaded file
-            }
-        })
-        .catch(error => {
-            console.log(error)
-
-        })
+    getRandomRgb() {
+        let num = Math.round(0xffffff * Math.random());
+        let r = num >> 16;
+        let g = num >> 8 & 255;
+        let b = num & 255;
+        return 'rgb(' + r + ', ' + g + ', ' + b + ')';
     }
 }

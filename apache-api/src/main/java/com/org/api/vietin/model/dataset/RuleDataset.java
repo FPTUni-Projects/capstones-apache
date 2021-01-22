@@ -24,10 +24,7 @@ public class RuleDataset implements Serializable {
 
     private String id;
     private String name;
-    private String userId;
-    private String publisher;
     private String fileName;
-    private String description;
     private String status;
     private MultipartFile file;
 

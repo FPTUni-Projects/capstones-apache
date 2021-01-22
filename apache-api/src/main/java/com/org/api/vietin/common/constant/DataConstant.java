@@ -10,11 +10,10 @@ public interface DataConstant {
 
     /**
      * Rule's status
-     * 0: Ready
-     * 1: Enable
-     * 2: Disable
+     * 0: Enable
+     * 1: Disable
      */
-    String[] RULE_STATUS = {"0", "1", "2"};
+    String[] RULE_STATUS = {"0", "1"};
 
     String VHOST_CONFIG_TEMPLATE = "\n" +
             "<VirtualHost *:80>\n" +
@@ -38,5 +37,14 @@ public interface DataConstant {
             "    <1h>SERVER_NAME_CONTENT website has been deployed!</h1>" +
             "</body>\n" +
             "</html>";
+
+    String MOD_SEC_CONFIG = "" +
+            "LoadModule security2_module modules/mod_security2.so\n" +
+            "SecRuleEngine DetectionOnly\n" +
+            "<IfModule security2_module>\n" +
+            "    SecRuleEngine On\n" +
+            "    SecDefaultAction \"phase:2,deny,log,status:403\"\n" +
+            "    MOD_SEC_DATA_CONTENT" +
+            "</IfModule>\n";
 
 }

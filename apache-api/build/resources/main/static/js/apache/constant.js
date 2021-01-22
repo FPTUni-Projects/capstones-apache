@@ -21,12 +21,18 @@ const CONSTANT = {
     },
 
     USER_STATUS: {
-        USER_ACTIVE: {id: '0', name: "Active"},
-        USER_INACTIVE: {id: '1', name: "In Active"},
-        HOST_ENABLED: {id: '2', name: 'Enabled'},
-        HOST_DISABLED: {id: '3', name: 'Disabled'},
-        RULE_ENABLED: {id: '4', name: 'Enabled'},
-        RULE_DISABLED: {id: '5', name: 'Disabled'},
+        ACTIVE: {id: '0', name: "Active"},
+        BLOCKED: {id: '1', name: "Blocked"},
+    },
+
+    SERVER_STATUS: {
+        ENABLED: {id: '0', name: 'Enabled'},
+        DISABLED: {id: '1', name: 'Disabled'}
+    },
+
+    RULE_STATUS: {
+        ENABLED: {id: '0', name: 'Enabled'},
+        DISABLED: {id: '1', name: 'Disabled'}
     }
 
 }

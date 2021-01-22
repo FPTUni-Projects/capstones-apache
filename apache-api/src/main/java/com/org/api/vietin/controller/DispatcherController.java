@@ -34,19 +34,9 @@ public class DispatcherController implements ErrorController {
         return "user-info";
     }
 
-    @GetMapping(value = {"/create-rule"})
+    @GetMapping(value = {"/manage-rule"})
     public String redirectCreateRulePage(HttpServletRequest request) {
-        return "create-rule";
-    }
-
-    @GetMapping(value = {"/manage-log"})
-    public String redirectManageLogPage(HttpServletRequest request) {
-        return "manage-log";
-    }
-
-    @GetMapping(value = {"/manage-user"})
-    public String redirectManageUserPage(HttpServletRequest request) {
-        return "manage-user";
+        return "manage-rule";
     }
 
     @GetMapping(value = {"/create-user"})

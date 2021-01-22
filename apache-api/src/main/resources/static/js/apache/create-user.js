@@ -57,7 +57,8 @@ const CREATE_USER = {
                         serverName: serverName,
                         serverAlias: serverAlias,
                         roleId: role,
-                        status: '0'
+                        userStatus: CONSTANT.USER_STATUS.ACTIVE.id,
+                        serverStatus: CONSTANT.SERVER_STATUS.ENABLED.id
                     }
 
                     REST.post('/vi/user/api/v1/create-user', user)

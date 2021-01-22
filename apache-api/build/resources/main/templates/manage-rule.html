@@ -14,7 +14,7 @@
     <link th:href="@{css/animate.min.css}" rel="stylesheet"/>
     <link th:href="@{css/light-bootstrap-dashboard.css}" rel="stylesheet"/>
     <link th:href="@{css/apache/main.css}" rel="stylesheet"/>
-    <link th:href="@{css/apache/create-user.css}" rel="stylesheet"/>
+    <link th:href="@{css/apache/manage-rule.css}" rel="stylesheet"/>
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -32,9 +32,9 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="card card-user">
+                            <div class="card card-rule">
                                 <div class="card-header">
-                                    <h4 class="card-title">Rule Information</h4>
+                                    <h4 class="card-title">Create New Rule</h4>
                                 </div>
                                 <div class="card-body">
                                     <div class="row">
@@ -52,14 +52,6 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-md-12 px-1">
-                                            <div class="form-group">
-                                                <label>Description</label>
-                                                <textarea class="form-control" placeholder="Description" value="" id="ruleDescription"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
                                         <div class="col-md-6 create-user-btn-group">
                                             <label>&emsp;</label>
                                             <button type="button" class="btn btn-main" id="btnCreateRule">Create Rule</button>
@@ -67,6 +59,24 @@
                                         </div>
                                     </div>
                                     <div class="clearfix"></div>
+                                </div>
+                            </div>
+
+                            <div class="card card-rule">
+                                <div class="header">
+                                    <h4 class="title">List Rules</h4>
+                                </div>
+                                <div class="content table-responsive table-full-width">
+                                    <table class="table table-hover table-striped">
+                                        <thead>
+                                            <th>#No</th>
+                                            <th>Rule Name</th>
+                                            <th>File Name</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </thead>
+                                        <tbody id="ruleLst" style="overflow-y: auto; max-height: 75vh;"><!-- List Rules Information --></tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -87,6 +97,6 @@
     <script type="application/javascript" th:src="@{js/apache/common-api.js}"></script>
     <script type="application/javascript" th:src="@{js/apache/common.js}"></script>
     <script type="application/javascript" th:src="@{js/apache/constant.js}"></script>
-    <script type="application/javascript" th:src="@{js/apache/create-rule.js}"></script>
+    <script type="application/javascript" th:src="@{js/apache/manage-rule.js}"></script>
 </body>
 </html>

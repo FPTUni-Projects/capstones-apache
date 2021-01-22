@@ -1,5 +1,6 @@
 package com.org.api.vietin.common.utils;
 
+import com.org.api.vietin.common.constant.Constant;
 import org.springframework.util.MimeType;
 import org.springframework.util.StringUtils;
 import org.springframework.web.multipart.MultipartFile;
@@ -189,5 +190,13 @@ public class CommonUtils {
         }
 
         return mimeType;
+    }
+
+    public static void restartHttpd(Constant constant) throws IOException, InterruptedException {
+//        Runtime run = Runtime.getRuntime();
+//        Process prKillHttpd = run.exec("taskkill /F /IM httpd.exe");
+//        prKillHttpd.waitFor();
+//        Process prStartHttpd = run.exec(constant.getApacheBinDir() + "httpd.exe");
+//        prStartHttpd.waitFor();
     }
 }

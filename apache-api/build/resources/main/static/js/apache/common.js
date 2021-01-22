@@ -52,15 +52,10 @@ const COMMON = {
 
     removeSidebar (_role) {
         switch (_role) {
-            case CONSTANT.ROLES.ADMIN.id:
-                $('#createRuleMenu').remove()
-                $('#logManagementMenu').remove()
-                $('#userManagementMenu').remove()
-                break;
+            case CONSTANT.ROLES.ADMIN.id: break;
             case CONSTANT.ROLES.USER.id:
                 $('#createUserMenu').remove()
-                $('#logManagementMenu').remove()
-                $('#userManagementMenu').remove()
+                $('#manageRuleMenu').remove()
                 break;
         }
     },

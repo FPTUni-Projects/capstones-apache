@@ -2,6 +2,8 @@ package com.org.api.vietin.mapper;
 
 import com.org.api.vietin.model.dataset.UserDataset;
 import com.org.api.vietin.model.dataset.UserPasswordDataset;
+import com.org.api.vietin.model.dataset.UserServerDataset;
+import com.org.api.vietin.service.UserService;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -27,10 +29,11 @@ public interface UserMapper {
     @Update("UPDATE " +
             "   ca_user " +
             "SET " +
-            "   status = '1' " +
+            "   status = #{status} " +
             "WHERE " +
             "   id = #{id} ")
-    Integer updStatus(@Param("id") String id);
+    Integer updStatus(@Param("id") String id,
+                      @Param("status") String status);
 
     /**
      * Select user information for authentication by username and password
@@ -57,19 +60,72 @@ public interface UserMapper {
      * @return UserDataset
      */
     @Select("SELECT " +
-            "   id, " +
-            "   full_name AS fullName, " +
-            "   username, " +
-            "   phone_number AS phoneNumber, " +
-            "   server_name AS serverName, " +
-            "   server_alias AS serverAlias," +
-            "   status " +
+            "   cau.id AS userId, " +
+            "   casi.id AS serverId, " +
+            "   cau.full_name AS fullName, " +
+            "   cau.username, " +
+            "   cau.phone_number AS phoneNumber, " +
+            "   casi.server_name AS serverName, " +
+            "   casi.server_alias AS serverAlias," +
+            "   cau.status AS userStatus, " +
+            "   casi.status AS serverStatus " +
             "FROM " +
-            "   ca_user " +
+            "   ca_user cau " +
+            "INNER JOIN " +
+            "   ca_server_info casi " +
+            "   ON cau.id = casi.user_id "+
             "WHERE " +
-            "   role_id != '0' " +
-            "   AND status != '1';")
-    List<UserDataset> selAllUser();
+            "   cau.role_id != '0' ")
+    List<UserServerDataset> selAllUser();
+
+    /**
+     * Select all user
+     * @return UserDataset
+     */
+    @Select("SELECT " +
+            "   cau.id AS userId, " +
+            "   casi.id AS serverId, " +
+            "   cau.full_name AS fullName, " +
+            "   cau.username, " +
+            "   cau.phone_number AS phoneNumber, " +
+            "   casi.server_name AS serverName, " +
+            "   casi.server_alias AS serverAlias," +
+            "   cau.status AS userStatus, " +
+            "   casi.status AS serverStatus " +
+            "FROM " +
+            "   ca_user cau " +
+            "INNER JOIN " +
+            "   ca_server_info casi " +
+            "   ON cau.id = casi.user_id "+
+            "WHERE " +
+            "   cau.role_id != '0' " +
+            "   AND cau.status = '0' ")
+    List<UserServerDataset> selAllActiveUser();
+
+
+    /**
+     * Select user information by user's id
+     * @param id
+     * @return UserDataset
+     */
+    @Select("SELECT " +
+            "   cau.id AS userId, " +
+            "   casi.id AS serverId, " +
+            "   cau.full_name AS fullName, " +
+            "   cau.username, " +
+            "   cau.phone_number AS phoneNumber, " +
+            "   casi.server_name AS serverName, " +
+            "   casi.server_alias AS serverAlias," +
+            "   cau.status AS userStatus, " +
+            "   casi.status AS serverStatus " +
+            "FROM " +
+            "   ca_user cau " +
+            "INNER JOIN " +
+            "   ca_server_info casi " +
+            "   ON cau.id = casi.user_id "+
+            "WHERE " +
+            "   cau.id = #{id} ")
+    UserServerDataset selUserInfo(@Param("id") String id);
 
     /**
      * Select user information by user's id
@@ -78,22 +134,19 @@ public interface UserMapper {
      */
     @Select("SELECT " +
             "   id, " +
-            "   username, " +
             "   full_name AS fullName, " +
+            "   username, " +
             "   phone_number AS phoneNumber, " +
-            "   role_id AS roleId, " +
-            "   server_name AS serverName, " +
-            "   server_alias AS serverAlias," +
-            "   status " +
+            "   status AS status " +
             "FROM " +
             "   ca_user " +
             "WHERE " +
             "   id = #{id} ")
-    UserDataset selUserInfo(@Param("id") String id);
+    UserDataset selUserInfoComm(@Param("id") String id);
 
     /**
      * Insert user information
-     * @param userDataset
+     * @param userServerDataset
      * @return Integer
      */
     @Insert("INSERT INTO ca_user( " +
@@ -103,29 +156,19 @@ public interface UserMapper {
             "   full_name, " +
             "   phone_number, " +
             "   role_id, " +
-            "   server_name, " +
-            "   server_alias, " +
             "   status " +
             ") VALUES ( " +
-            "   #{id}, " +
+            "   #{userId}, " +
             "   #{username}, " +
             "   #{password}, " +
             "   #{fullName}, " +
             "   #{phoneNumber}, " +
             "   #{roleId}, " +
-            "   #{serverName}, " +
-            "   #{serverAlias}, " +
-            "   #{status} " +
+            "   #{userStatus} " +
             ")")
-    Integer insUser(UserDataset userDataset);
+    Integer insUser(UserServerDataset userServerDataset);
 
     @Select("SELECT COUNT(1) FROM ca_user WHERE username = #{username}")
     Integer selExistUsername(@Param("username") String username);
-
-    @Select("SELECT COUNT(1) FROM ca_user WHERE server_name = #{serverName}")
-    Integer selExistServerName(@Param("serverName") String serverName);
-
-    @Select("SELECT COUNT(1) FROM ca_user WHERE server_alias = #{serverAlias}")
-    Integer selExistServerAlias(@Param("serverAlias") String serverAlias);
 
 }

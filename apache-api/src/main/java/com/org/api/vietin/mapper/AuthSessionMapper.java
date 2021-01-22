@@ -38,6 +38,7 @@ public interface AuthSessionMapper {
             "       AND vias.auth_key = viu.password " +
             "WHERE " +
             "   vias.user_id = #{userId} " +
+            "   AND viu.status = '0' " +
             "   AND vias.session_id = #{sessionId} " +
             "   AND vias.timeout_flg != '1'; ")
     AuthSessionDataset selAuthSessionInfo(@Param("userId") String userId,

@@ -29,10 +29,6 @@ public class UserEntity implements Serializable {
     private String fullName;
     @Column(name = "phone_number", length = 30, nullable = false)
     private String phoneNumber;
-    @Column(name = "server_name", length = 250, nullable = false)
-    private String serverName;
-    @Column(name = "server_alias", length = 250, nullable = false)
-    private String serverAlias;
     @Column(name = "role_id", length = 1, nullable = false)
     private String roleId;
     @Column(name = "status", length = 1, nullable = false)

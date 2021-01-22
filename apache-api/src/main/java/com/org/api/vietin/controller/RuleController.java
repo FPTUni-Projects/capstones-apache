@@ -34,27 +34,23 @@ public class RuleController {
     }
 
     @GetMapping(value = "/get-all-rule", produces = MediaType.APPLICATION_JSON_VALUE)
-    public List<RuleDataset> getAllRule(@RequestParam("userId") String userId,
-                                        @RequestParam("roleId") String roleId) {
-        return ruleService.getAllRule(userId, roleId);
+    public List<RuleDataset> getAllRule() {
+        return ruleService.getAllRule();
     }
 
     @GetMapping(value = "/remove-rule", produces = MediaType.APPLICATION_JSON_VALUE)
-    public boolean removeRule(@RequestParam("ruleId") String ruleId,
-                              @RequestParam("userId") String userId) {
-        return ruleService.removeRule(ruleId, userId);
+    public boolean removeRule(@RequestParam("ruleId") String ruleId) {
+        return ruleService.removeRule(ruleId);
     }
 
     @GetMapping(value = "/update-rule", produces = MediaType.APPLICATION_JSON_VALUE)
     public boolean updateRule(@RequestParam("ruleId") String ruleId,
-                              @RequestParam("userId") String userId,
                               @RequestParam("status") String status) {
-        return ruleService.updateRule(ruleId, userId, status);
+        return ruleService.updateRule(ruleId, status);
     }
 
     @GetMapping(value = "/download-rule", produces = MediaType.APPLICATION_JSON_VALUE)
-    public RuleFileDataset downloadRule(@RequestParam("ruleId") String ruleId,
-                                        @RequestParam("userId") String userId) {
-        return ruleService.downloadRule(ruleId, userId);
+    public RuleFileDataset downloadRule(@RequestParam("ruleId") String ruleId) {
+        return ruleService.downloadRule(ruleId);
     }
 }

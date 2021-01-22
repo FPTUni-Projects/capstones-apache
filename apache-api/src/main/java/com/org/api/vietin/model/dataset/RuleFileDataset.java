@@ -8,7 +8,6 @@ import lombok.Setter;
 /**
  * RuleFileDataset
  *
- * @author khal
  * @since 2020/12/15
  */
 @Getter

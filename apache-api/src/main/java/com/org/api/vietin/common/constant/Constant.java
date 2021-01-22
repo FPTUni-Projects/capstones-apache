@@ -13,15 +13,11 @@ import org.springframework.stereotype.Component;
  */
 @Getter
 @Component
-@PropertySource(value = "classpath:constant-${spring.profiles.active}.properties", encoding = "utf-8")
+@PropertySource(value = "classpath:constant.properties", encoding = "utf-8")
 public class Constant {
 
     @Value("${DIR.ROOT}")
     private String rootDir;
-    @Value("${DIR.LOG}")
-    private String logDir;
-    @Value("${DIR.CONF}")
-    private String confDir;
 
     @Value("${DIR.APACHE}")
     private String apacheDir;
@@ -29,13 +25,15 @@ public class Constant {
     private String apacheBinDir;
     @Value("${DIR.APACHE.HTDOCS}")
     private String apacheHtdocs;
+    @Value("${DIR.APACHE.CONF}")
+    private String apacheConfDir;
     @Value("${DIR.APACHE.CONF_EXTRA}")
     private String apacheConfExtraDir;
+    @Value("${DIR.APACHE.MODS}")
+    private String apacheModsDir;
+    @Value("${DIR.APACHE.LOGS}")
+    private String apacheLogsDir;
 
-    @Value("${CMD.RESTART_APACHE_UBUNTU}")
-    private String cmdRestartApacheUbuntu;
-    @Value("${CMD.RESTART_APACHE_CENTOS}")
-    private String cmdRestartApacheCentOS;
     @Value("${AUTH.EXPIRATION}")
     private Integer authExpiration;
 

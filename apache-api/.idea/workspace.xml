@@ -11,51 +11,150 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/apache-api.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/AuthenticateController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/AuthenticateController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/config/AppProfileConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/DataConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/constant/DataConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/utils/CommonUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/common/utils/CommonUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/DispatcherController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/DispatcherController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/LogController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/RuleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/RuleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/filter/AuthenticateFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/filter/AuthenticateFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/AuthSessionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/AuthSessionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/RuleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/RuleMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/mapper/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/AuthenticateService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/AuthenticateService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/AuthenticateServiceImp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/RuleDataset.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/RuleDataset.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/RuleFileDataset.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/RuleFileDataset.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/UserDataset.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/dataset/UserDataset.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/entity/RuleEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/entity/RuleEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/entity/UserEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/model/entity/UserEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/LogServiceImp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/RuleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/RuleService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/RuleServiceImp.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/org/api/vietin/service/UserServiceImp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/constant-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/constant-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/constant-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/constant-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/constant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/constant.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/apache/create-rule.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/css/apache/user-info.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/css/apache/user-info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/common-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/common-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/constant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/create-rule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/create-user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/static/js/apache/user-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/js/apache/user-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/create-rule.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/sections/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/sections/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/user-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/user-info.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/config/AppProfileConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/DataConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/constant/DataConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/common/utils/CommonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/DispatcherController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/DispatcherController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/LogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/LogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/RuleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/RuleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/AuthSessionMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/AuthSessionMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/RuleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/RuleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/AuthenticateService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/AuthenticateService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/AuthenticateServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/RuleDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/RuleDataset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/RuleFileDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/RuleFileDataset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/UserDataset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/dataset/UserDataset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/entity/RuleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/entity/RuleEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/model/entity/UserEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/LogServiceImp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/RuleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/RuleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/RuleServiceImp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/org/api/vietin/service/UserServiceImp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/constant-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/constant-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/constant-dev.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/constant-prod.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/constant.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/constant.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/apache/create-rule.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/apache/manage-rule.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/apache/user-info.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/apache/user-info.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/common-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/common-api.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/constant.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/create-rule.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/manage-rule.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/create-user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/create-user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/apache/user-info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/apache/user-info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/create-rule.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/manage-rule.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/sections/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/sections/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user-info.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user-info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-log/access_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache-log/error_log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache_dir/2572027_REQUEST-941-APPLICATION-ATTACK-XSS.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache_dir/7904388_REQUEST-913-SCANNER-DETECTION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apache_dir/8913401_RESPONSE-950-DATA-LEAKAGES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dir/0000001/2572027/2572027_REQUEST-941-APPLICATION-ATTACK-XSS.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dir/8560782/7904388/7904388_REQUEST-913-SCANNER-DETECTION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dir/8560782/8913401/8913401_RESPONSE-950-DATA-LEAKAGES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/crs-setup.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/modsecurity.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules.rar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-901-INITIALIZATION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-903.9001-DRUPAL-EXCLUSION-RULES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-903.9002-WORDPRESS-EXCLUSION-RULES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-903.9003-NEXTCLOUD-EXCLUSION-RULES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-903.9004-DOKUWIKI-EXCLUSION-RULES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-903.9005-CPANEL-EXCLUSION-RULES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-903.9006-XENFORO-EXCLUSION-RULES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-905-COMMON-EXCEPTIONS.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-910-IP-REPUTATION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-911-METHOD-ENFORCEMENT.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-912-DOS-PROTECTION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-913-SCANNER-DETECTION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-920-PROTOCOL-ENFORCEMENT.conf___" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-921-PROTOCOL-ATTACK.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-930-APPLICATION-ATTACK-LFI.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-931-APPLICATION-ATTACK-RFI.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-932-APPLICATION-ATTACK-RCE.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-933-APPLICATION-ATTACK-PHP.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-934-APPLICATION-ATTACK-NODEJS.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-941-APPLICATION-ATTACK-XSS.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-942-APPLICATION-ATTACK-SQLI.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-943-APPLICATION-ATTACK-SESSION-FIXATION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-944-APPLICATION-ATTACK-JAVA.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/REQUEST-949-BLOCKING-EVALUATION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/RESPONSE-950-DATA-LEAKAGES.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/RESPONSE-951-DATA-LEAKAGES-SQL.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/RESPONSE-952-DATA-LEAKAGES-JAVA.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/RESPONSE-953-DATA-LEAKAGES-PHP.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/RESPONSE-954-DATA-LEAKAGES-IIS.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/RESPONSE-959-BLOCKING-EVALUATION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/RESPONSE-980-CORRELATION.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/crawlers-user-agents.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/iis-errors.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/java-classes.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/java-code-leakages.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/java-errors.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/lfi-os-files.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/php-config-directives.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/php-errors.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/php-function-names-933150.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/php-function-names-933151.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/php-variables.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/restricted-files.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/restricted-upload.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/scanners-headers.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/scanners-urls.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/scanners-user-agents.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/scripting-user-agents.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/sql-errors.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/unix-shell.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/rules/windows-powershell-commands.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/conf/unicode.mapping" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/httpd.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../modSecurity/modules/mod_security2.so" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,8 +184,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -120,23 +220,27 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/js/apache" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/js" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="show.unlinked.gradle.project.popup" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/css" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.org.api.vietin.model.dataset" />
+      <recent name="com.org.api.vietin.model.entity" />
       <recent name="com.org.api.vietin.common.utils" />
       <recent name="com.org.api.vietin.common.config" />
       <recent name="com.org.api.vietin.service" />
-      <recent name="com.org.api.vietin.controller" />
-      <recent name="com.org.api.vietin.mapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/static/js" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/js/apache" />
       <recent name="$PROJECT_DIR$/src/main/resources/static/css/apache" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
@@ -197,6 +301,8 @@
       <workItem from="1611203228490" duration="784000" />
       <workItem from="1611204321898" duration="12517000" />
       <workItem from="1611237653844" duration="8335000" />
+      <workItem from="1611314834554" duration="10080000" />
+      <workItem from="1611341234983" duration="10737000" />
     </task>
     <servers />
   </component>
@@ -204,54 +310,71 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1638" height="223" key="GridCell.Tab.0.bottom" timestamp="1611273615230">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state x="602" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611328723123">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615230" />
+    <state x="602" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1611328723123" />
+    <state width="1420" height="663" key="GridCell.Tab.0.bottom" timestamp="1611355539115">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1420" height="663" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1611355539115" />
+    <state width="1638" height="289" key="GridCell.Tab.0.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1611337146491" />
     <state width="1638" height="205" key="GridCell.Tab.0.bottom/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910493" />
-    <state width="1638" height="223" key="GridCell.Tab.0.center" timestamp="1611273615229">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state width="1420" height="663" key="GridCell.Tab.0.center" timestamp="1611355539113">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615229" />
+    <state width="1420" height="663" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1611355539113" />
+    <state width="1638" height="289" key="GridCell.Tab.0.center/0.25.1680.1025@0.25.1680.1025" timestamp="1611337146489" />
     <state width="1638" height="205" key="GridCell.Tab.0.center/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910489" />
-    <state width="1638" height="223" key="GridCell.Tab.0.left" timestamp="1611273615229">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state width="1420" height="663" key="GridCell.Tab.0.left" timestamp="1611355539112">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615229" />
+    <state width="1420" height="663" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1611355539112" />
+    <state width="1638" height="289" key="GridCell.Tab.0.left/0.25.1680.1025@0.25.1680.1025" timestamp="1611337146483" />
     <state width="1638" height="205" key="GridCell.Tab.0.left/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910488" />
-    <state width="1638" height="223" key="GridCell.Tab.0.right" timestamp="1611273615230">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state width="1420" height="663" key="GridCell.Tab.0.right" timestamp="1611355539114">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615230" />
+    <state width="1420" height="663" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1611355539114" />
+    <state width="1638" height="289" key="GridCell.Tab.0.right/0.25.1680.1025@0.25.1680.1025" timestamp="1611337146490" />
     <state width="1638" height="205" key="GridCell.Tab.0.right/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910491" />
-    <state width="1638" height="223" key="GridCell.Tab.1.bottom" timestamp="1611273615232">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state width="1420" height="663" key="GridCell.Tab.1.bottom" timestamp="1611355539117">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.1.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615232" />
+    <state width="1420" height="663" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1611355539117" />
+    <state width="1638" height="289" key="GridCell.Tab.1.bottom/0.25.1680.1025@0.25.1680.1025" timestamp="1611337146493" />
     <state width="1638" height="205" key="GridCell.Tab.1.bottom/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910500" />
-    <state width="1638" height="223" key="GridCell.Tab.1.center" timestamp="1611273615231">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state width="1420" height="663" key="GridCell.Tab.1.center" timestamp="1611355539116">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.1.center/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615231" />
+    <state width="1420" height="663" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1611355539116" />
+    <state width="1638" height="289" key="GridCell.Tab.1.center/0.25.1680.1025@0.25.1680.1025" timestamp="1611337146492" />
     <state width="1638" height="205" key="GridCell.Tab.1.center/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910495" />
-    <state width="1638" height="223" key="GridCell.Tab.1.left" timestamp="1611273615230">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state width="1420" height="663" key="GridCell.Tab.1.left" timestamp="1611355539115">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.1.left/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615230" />
+    <state width="1420" height="663" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1611355539115" />
+    <state width="1638" height="289" key="GridCell.Tab.1.left/0.25.1680.1025@0.25.1680.1025" timestamp="1611337146492" />
     <state width="1638" height="205" key="GridCell.Tab.1.left/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910494" />
-    <state width="1638" height="223" key="GridCell.Tab.1.right" timestamp="1611273615231">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state width="1420" height="663" key="GridCell.Tab.1.right" timestamp="1611355539116">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="223" key="GridCell.Tab.1.right/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615231" />
+    <state width="1420" height="663" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1611355539116" />
+    <state width="1638" height="289" key="GridCell.Tab.1.right/0.25.1680.1025@0.25.1680.1025" timestamp="1611337146493" />
     <state width="1638" height="205" key="GridCell.Tab.1.right/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611255910496" />
-    <state x="0" y="0" width="1680" height="1050" key="dock-window-1" timestamp="1611273615941">
-      <screen x="0" y="25" width="1680" height="1025" />
+    <state x="349" y="161" key="SettingsEditor" timestamp="1611342841448">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="349" y="161" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1611342841448" />
+    <state x="0" y="0" width="1680" height="1050" maximized="true" key="dock-window-1" timestamp="1611315041861">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="0" y="0" width="1680" height="1050" key="dock-window-1/0.25.1680.1025@0.25.1680.1025" timestamp="1611273615941" />
     <state x="1680" y="75" width="1920" height="1080" key="dock-window-1/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611249468782" />
-    <state x="425" y="250" width="829" height="550" key="find.popup" timestamp="1611251684613">
+    <state x="425" y="269" width="829" height="550" key="find.popup" timestamp="1611355065588">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="425" y="269" width="829" height="550" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1611355065588" />
     <state x="425" y="250" width="829" height="550" key="find.popup/1680.75.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1611251684613" />
   </component>
 </project>

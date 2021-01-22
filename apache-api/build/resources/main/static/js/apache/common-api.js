@@ -34,12 +34,13 @@ const COMMON_API = {
     },
 
     getUserInfo (_userId) {
-        return REST.get('/vi/user/api/v1/get-user-info', {userId: _userId})
+        return REST.get('/vi/user/api/v1/get-user-info-comm', {userId: _userId})
             .then(response => {
                 if (response) {
                     return response
                 }
             }).catch(error => {
+                console.log(error)
                 COMMON.toastMsg('Hệ thống xử lý lỗi.', CONSTANT.MSG_TYPE.ERROR)
             })
     }

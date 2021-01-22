@@ -6,20 +6,42 @@
     margin: 0.5rem 1rem 1rem 0;
     font-weight: bold;
 }
-.card-user #userPassword {
-    cursor: text;
-    font-weight: bold;
-    background: #fff;
-    color: #000;
+.card-user .card-header #btnBlockUser {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
 }
-.card-user .create-user-btn-group {
+.card-user .card-body {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    width: 100%;
 }
-.card-user .create-user-btn-group button {
-    margin-top: 17px;
-    margin-left: 1rem !important;
-    padding-left: 3rem;
-    padding-right: 3rem;
+
+#websiteInfoWrapper {
+    display: flex;
+}
+#websiteInfoWrapper .info-line {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+}
+#websiteInfoWrapper #overviewInfoWrapper .info-line .info-left { width: 40%; }
+#websiteInfoWrapper #overviewInfoWrapper .info-line .info-right { width: 60%; }
+#websiteInfoWrapper #overviewInfoWrapper .info-line .info-left,
+#websiteInfoWrapper #overviewInfoWrapper .info-line .info-right {
+    font-size: 1.4rem;
+    display: inline-flex;
+    font-weight: 500;
+}
+#websiteInfoWrapper #vhostConfigWrapper {
+    display: flex;
+}
+#websiteInfoWrapper #vhostConfigWrapper code {
+    font-size: 1.4rem;
+    color: #000000;
+    font-weight: 500;
+    background: #f7f7f7;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+#websiteInfoWrapper #vhostConfigWrapper code {
+    font-size: 1.4rem;
 }
